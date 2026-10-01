@@ -1,0 +1,6322 @@
+[
+  {
+    "case": "small",
+    "cpu_mean_percent": 98.95146957155015,
+    "cpu_peak_percent": 105.56263804285678,
+    "elapsed_seconds": 10.015287657,
+    "load_cpu": {
+      "cores": 0.075,
+      "cpu_seconds": 0.759,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 12.650846,
+    "p99_ms": 51.09843,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 45302,
+    "resources_available": true,
+    "rps": 4523.28495710625,
+    "rss_mean_mib": 91.58772786458333,
+    "rss_peak_mib": 91.6015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "small",
+    "cpu_mean_percent": 395.3832331680323,
+    "cpu_peak_percent": 424.71492980024186,
+    "elapsed_seconds": 10.019236326,
+    "load_cpu": {
+      "cores": 0.164,
+      "cpu_seconds": 1.647,
+      "cpus": 8,
+      "utilization": 0.021
+    },
+    "p50_ms": 2.611743,
+    "p99_ms": 42.349596000000005,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 101056,
+    "resources_available": true,
+    "rps": 10086.197860984561,
+    "rss_mean_mib": 283.2488606770833,
+    "rss_peak_mib": 284.08984375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "small",
+    "cpu_mean_percent": 394.990247764107,
+    "cpu_peak_percent": 417.5735803351352,
+    "elapsed_seconds": 10.014932104,
+    "load_cpu": {
+      "cores": 0.211,
+      "cpu_seconds": 2.124,
+      "cpus": 8,
+      "utilization": 0.026
+    },
+    "p50_ms": 1.573707,
+    "p99_ms": 32.207115,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 136759,
+    "resources_available": true,
+    "rps": 13655.509451270065,
+    "rss_mean_mib": 285.266357421875,
+    "rss_peak_mib": 285.2734375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "small",
+    "cpu_mean_percent": 97.74802262334835,
+    "cpu_peak_percent": 105.39430063972239,
+    "elapsed_seconds": 10.032188245,
+    "load_cpu": {
+      "cores": 0.058,
+      "cpu_seconds": 0.586,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 19.341598,
+    "p99_ms": 70.801223,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 29149,
+    "resources_available": true,
+    "rps": 2905.5475523525724,
+    "rss_mean_mib": 91.32796556122449,
+    "rss_peak_mib": 91.41796875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.02,
+        "cpus": 4,
+        "utilization": 0.005
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 395.2078263288661,
+    "cpu_peak_percent": 410.1976839019418,
+    "elapsed_seconds": 10.009166182,
+    "load_cpu": {
+      "cores": 0.198,
+      "cpu_seconds": 1.993,
+      "cpus": 8,
+      "utilization": 0.025
+    },
+    "p50_ms": 3.674802,
+    "p99_ms": 31.088855,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 119576,
+    "resources_available": true,
+    "rps": 11946.649483654262,
+    "rss_mean_mib": 287.44091796875,
+    "rss_peak_mib": 287.4609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 97.30098693053236,
+    "cpu_peak_percent": 105.55081863566171,
+    "elapsed_seconds": 10.018763905,
+    "load_cpu": {
+      "cores": 0.064,
+      "cpu_seconds": 0.649,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 15.432227999999999,
+    "p99_ms": 59.447435,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 36868,
+    "resources_available": true,
+    "rps": 3679.895079831208,
+    "rss_mean_mib": 91.98820153061224,
+    "rss_peak_mib": 91.99609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 99.52672454472201,
+    "cpu_peak_percent": 105.50672593973766,
+    "elapsed_seconds": 10.052490965,
+    "load_cpu": {
+      "cores": 0.029,
+      "cpu_seconds": 0.289,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 49.275718000000005,
+    "p99_ms": 128.891212,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 11219,
+    "resources_available": true,
+    "rps": 1116.0417889517596,
+    "rss_mean_mib": 99.33064778645833,
+    "rss_peak_mib": 99.40234375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 395.4454611676765,
+    "cpu_peak_percent": 423.52230282361194,
+    "elapsed_seconds": 10.020486281,
+    "load_cpu": {
+      "cores": 0.084,
+      "cpu_seconds": 0.849,
+      "cpus": 8,
+      "utilization": 0.011
+    },
+    "p50_ms": 12.620115,
+    "p99_ms": 70.111962,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 37318,
+    "resources_available": true,
+    "rps": 3724.1705595425283,
+    "rss_mean_mib": 308.171630859375,
+    "rss_peak_mib": 309.34765625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 395.7150603173253,
+    "cpu_peak_percent": 413.81600541463047,
+    "elapsed_seconds": 10.037666848,
+    "load_cpu": {
+      "cores": 0.072,
+      "cpu_seconds": 0.728,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 22.937732999999998,
+    "p99_ms": 87.441439,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 24725,
+    "resources_available": true,
+    "rps": 2463.2218198122846,
+    "rss_mean_mib": 318.789794921875,
+    "rss_peak_mib": 322.12109375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 395.8291076447351,
+    "cpu_peak_percent": 414.02527466459054,
+    "elapsed_seconds": 10.017376498,
+    "load_cpu": {
+      "cores": 0.132,
+      "cpu_seconds": 1.327,
+      "cpus": 8,
+      "utilization": 0.017
+    },
+    "p50_ms": 5.025376,
+    "p99_ms": 49.769235,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 63658,
+    "resources_available": true,
+    "rps": 6354.75765662891,
+    "rss_mean_mib": 287.238037109375,
+    "rss_peak_mib": 287.28515625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 98.99737597158119,
+    "cpu_peak_percent": 108.56509034468561,
+    "elapsed_seconds": 10.035348301,
+    "load_cpu": {
+      "cores": 0.057,
+      "cpu_seconds": 0.578,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 31.717760999999996,
+    "p99_ms": 93.800121,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 18005,
+    "resources_available": true,
+    "rps": 1794.157956451381,
+    "rss_mean_mib": 91.98038736979167,
+    "rss_peak_mib": 91.984375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 97.7758272621331,
+    "cpu_peak_percent": 105.48431415986946,
+    "elapsed_seconds": 10.081668367,
+    "load_cpu": {
+      "cores": 0.028,
+      "cpu_seconds": 0.279,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 80.980318,
+    "p99_ms": 162.2403,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 7176,
+    "resources_available": true,
+    "rps": 711.7869521962227,
+    "rss_mean_mib": 101.82015306122449,
+    "rss_peak_mib": 102.09765625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 383.9308500616413,
+    "cpu_peak_percent": 407.5803961581406,
+    "elapsed_seconds": 10.461261038,
+    "load_cpu": {
+      "cores": 0.03,
+      "cpu_seconds": 0.31,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 56.019216,
+    "p99_ms": 648.8840769999999,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 3734,
+    "resources_available": true,
+    "rps": 356.935935967608,
+    "rss_mean_mib": 479.765546875,
+    "rss_peak_mib": 496.23046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.032,
+        "cpus": 4,
+        "utilization": 0.008
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 98.28577064024002,
+    "cpu_peak_percent": 105.49343948676378,
+    "elapsed_seconds": 10.149543806,
+    "load_cpu": {
+      "cores": 0.029,
+      "cpu_seconds": 0.297,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 172.72200600000002,
+    "p99_ms": 264.13435400000003,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 3594,
+    "resources_available": true,
+    "rps": 354.1045852598195,
+    "rss_mean_mib": 96.48883928571429,
+    "rss_peak_mib": 96.53125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 98.8962999715142,
+    "cpu_peak_percent": 105.37154341194422,
+    "elapsed_seconds": 10.514706413999999,
+    "load_cpu": {
+      "cores": 0.012,
+      "cpu_seconds": 0.122,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 561.386354,
+    "p99_ms": 760.4779219999999,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 1168,
+    "resources_available": true,
+    "rps": 111.08251186593712,
+    "rss_mean_mib": 160.1378676470588,
+    "rss_peak_mib": 164.56640625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 394.6283423602065,
+    "cpu_peak_percent": 417.1170086723674,
+    "elapsed_seconds": 10.099787675,
+    "load_cpu": {
+      "cores": 0.074,
+      "cpu_seconds": 0.747,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 34.740304,
+    "p99_ms": 181.97812,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 12223,
+    "resources_available": true,
+    "rps": 1210.2234614550944,
+    "rss_mean_mib": 306.1416829427083,
+    "rss_peak_mib": 306.23046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 373.5566066941308,
+    "cpu_peak_percent": 412.573868555704,
+    "elapsed_seconds": 11.980384646,
+    "load_cpu": {
+      "cores": 0.014,
+      "cpu_seconds": 0.169,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 1554.760594,
+    "p99_ms": 3024.088968,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 453,
+    "resources_available": true,
+    "rps": 37.81180766606248,
+    "rss_mean_mib": 1033.5174753289473,
+    "rss_peak_mib": 1127.09765625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 98.1750759056001,
+    "cpu_peak_percent": 105.75422026627115,
+    "elapsed_seconds": 11.503947587999999,
+    "load_cpu": {
+      "cores": 0.013,
+      "cpu_seconds": 0.148,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 1580.352184,
+    "p99_ms": 1900.222863,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 455,
+    "resources_available": true,
+    "rps": 39.55164055811761,
+    "rss_mean_mib": 161.87855747767858,
+    "rss_peak_mib": 162.3125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.026,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 368.6994234772192,
+    "cpu_peak_percent": 414.84384554915323,
+    "elapsed_seconds": 11.039456779,
+    "load_cpu": {
+      "cores": 0.041,
+      "cpu_seconds": 0.451,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 231.344199,
+    "p99_ms": 1646.1309370000001,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 1324,
+    "resources_available": true,
+    "rps": 119.93343753277809,
+    "rss_mean_mib": 611.2548643867924,
+    "rss_peak_mib": 616.28125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.031,
+        "cpus": 4,
+        "utilization": 0.008
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 99.67091987093538,
+    "cpu_peak_percent": 105.2656843072838,
+    "elapsed_seconds": 15.212346384,
+    "load_cpu": {
+      "cores": 0.005,
+      "cpu_seconds": 0.071,
+      "cpus": 8,
+      "utilization": 0.001
+    },
+    "p50_ms": 5449.985585,
+    "p99_ms": 6594.953806,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 173,
+    "resources_available": true,
+    "rps": 11.37234162521815,
+    "rss_mean_mib": 292.98207405821915,
+    "rss_peak_mib": 329.60546875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 395.14766867345907,
+    "cpu_peak_percent": 417.4048350182675,
+    "elapsed_seconds": 10.023643473,
+    "load_cpu": {
+      "cores": 0.099,
+      "cpu_seconds": 0.995,
+      "cpus": 8,
+      "utilization": 0.012
+    },
+    "p50_ms": 5.374848,
+    "p99_ms": 66.030399,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 51539,
+    "resources_available": true,
+    "rps": 5141.743133505004,
+    "rss_mean_mib": 290.2074381510417,
+    "rss_peak_mib": 291.16796875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 393.0700743603599,
+    "cpu_peak_percent": 413.6232160326908,
+    "elapsed_seconds": 10.012031027,
+    "load_cpu": {
+      "cores": 0.187,
+      "cpu_seconds": 1.878,
+      "cpus": 8,
+      "utilization": 0.023
+    },
+    "p50_ms": 5.186118,
+    "p99_ms": 36.811510999999996,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 106472,
+    "resources_available": true,
+    "rps": 10634.405717768057,
+    "rss_mean_mib": 285.8422037760417,
+    "rss_peak_mib": 285.859375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 99.1441517374974,
+    "cpu_peak_percent": 109.13133472672017,
+    "elapsed_seconds": 10.019776922,
+    "load_cpu": {
+      "cores": 0.064,
+      "cpu_seconds": 0.646,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 17.356198,
+    "p99_ms": 64.709823,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 32792,
+    "resources_available": true,
+    "rps": 3272.7275522471955,
+    "rss_mean_mib": 91.782470703125,
+    "rss_peak_mib": 91.79296875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 97.8029458213511,
+    "cpu_peak_percent": 105.70957445185407,
+    "elapsed_seconds": 10.038789998,
+    "load_cpu": {
+      "cores": 0.038,
+      "cpu_seconds": 0.384,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 36.203655,
+    "p99_ms": 105.992851,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 15573,
+    "resources_available": true,
+    "rps": 1551.2825752010515,
+    "rss_mean_mib": 93.7881855867347,
+    "rss_peak_mib": 93.9921875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 99.42091156305197,
+    "cpu_peak_percent": 104.91466807476557,
+    "elapsed_seconds": 10.028245157,
+    "load_cpu": {
+      "cores": 0.053,
+      "cpu_seconds": 0.533,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 26.027182,
+    "p99_ms": 84.879987,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 21950,
+    "resources_available": true,
+    "rps": 2188.817650182622,
+    "rss_mean_mib": 92.21785481770833,
+    "rss_peak_mib": 92.23046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 396.5353968044375,
+    "cpu_peak_percent": 412.85208938142813,
+    "elapsed_seconds": 10.029641949,
+    "load_cpu": {
+      "cores": 0.07,
+      "cpu_seconds": 0.706,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 24.688629,
+    "p99_ms": 99.58086300000001,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 26479,
+    "resources_available": true,
+    "rps": 2640.0743052088787,
+    "rss_mean_mib": 313.22021484375,
+    "rss_peak_mib": 314.38671875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 97.7972293805271,
+    "cpu_peak_percent": 105.4745395577395,
+    "elapsed_seconds": 10.077504849,
+    "load_cpu": {
+      "cores": 0.027,
+      "cpu_seconds": 0.27,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 71.36173799999999,
+    "p99_ms": 153.26705600000003,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 7961,
+    "resources_available": true,
+    "rps": 789.9772929198815,
+    "rss_mean_mib": 99.2290338010204,
+    "rss_peak_mib": 99.51171875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 393.72195762193076,
+    "cpu_peak_percent": 418.65860551822715,
+    "elapsed_seconds": 10.016010276,
+    "load_cpu": {
+      "cores": 0.138,
+      "cpu_seconds": 1.388,
+      "cpus": 8,
+      "utilization": 0.017
+    },
+    "p50_ms": 8.193215,
+    "p99_ms": 50.585173,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 73568,
+    "resources_available": true,
+    "rps": 7345.040387616312,
+    "rss_mean_mib": 288.7671712239583,
+    "rss_peak_mib": 288.77734375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 390.24005179545486,
+    "cpu_peak_percent": 413.49378715500904,
+    "elapsed_seconds": 10.073835334,
+    "load_cpu": {
+      "cores": 0.051,
+      "cpu_seconds": 0.511,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 23.448679,
+    "p99_ms": 148.827257,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 16051,
+    "resources_available": true,
+    "rps": 1593.3355537216885,
+    "rss_mean_mib": 338.308837890625,
+    "rss_peak_mib": 342.71875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 396.2598134806288,
+    "cpu_peak_percent": 414.1361655035677,
+    "elapsed_seconds": 10.017364386,
+    "load_cpu": {
+      "cores": 0.107,
+      "cpu_seconds": 1.077,
+      "cpus": 8,
+      "utilization": 0.013
+    },
+    "p50_ms": 10.447555000000001,
+    "p99_ms": 56.336959,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 46144,
+    "resources_available": true,
+    "rps": 4606.401267032835,
+    "rss_mean_mib": 288.4898274739583,
+    "rss_peak_mib": 288.53125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 99.00182634093841,
+    "cpu_peak_percent": 105.32092417426016,
+    "elapsed_seconds": 10.121576848,
+    "load_cpu": {
+      "cores": 0.021,
+      "cpu_seconds": 0.214,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 124.91582,
+    "p99_ms": 209.768935,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 4811,
+    "resources_available": true,
+    "rps": 475.3211947356446,
+    "rss_mean_mib": 109.6141581632653,
+    "rss_peak_mib": 110.2890625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 98.32870246137966,
+    "cpu_peak_percent": 105.47996256440881,
+    "elapsed_seconds": 10.042789096,
+    "load_cpu": {
+      "cores": 0.037,
+      "cpu_seconds": 0.374,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 41.835174,
+    "p99_ms": 109.156165,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 13750,
+    "resources_available": true,
+    "rps": 1369.1415670051824,
+    "rss_mean_mib": 92.22839604591837,
+    "rss_peak_mib": 92.23828125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 97.62367040228496,
+    "cpu_peak_percent": 105.41397609351893,
+    "elapsed_seconds": 10.04034312,
+    "load_cpu": {
+      "cores": 0.052,
+      "cpu_seconds": 0.525,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 37.256784,
+    "p99_ms": 104.76683,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 15191,
+    "resources_available": true,
+    "rps": 1512.9961016710752,
+    "rss_mean_mib": 115.70527742346938,
+    "rss_peak_mib": 119.9140625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 97.69621898659095,
+    "cpu_peak_percent": 105.56201453106272,
+    "elapsed_seconds": 10.03315512,
+    "load_cpu": {
+      "cores": 0.062,
+      "cpu_seconds": 0.623,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 29.591786,
+    "p99_ms": 91.695827,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 19285,
+    "resources_available": true,
+    "rps": 1922.1271643211671,
+    "rss_mean_mib": 93.39118303571429,
+    "rss_peak_mib": 93.3984375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 390.3636847366774,
+    "cpu_peak_percent": 420.959734762347,
+    "elapsed_seconds": 10.017462869,
+    "load_cpu": {
+      "cores": 0.162,
+      "cpu_seconds": 1.627,
+      "cpus": 8,
+      "utilization": 0.02
+    },
+    "p50_ms": 11.12731,
+    "p99_ms": 59.461890000000004,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 47735,
+    "resources_available": true,
+    "rps": 4765.178630980559,
+    "rss_mean_mib": 364.0723470052083,
+    "rss_peak_mib": 377.70703125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.03,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 395.96679740072284,
+    "cpu_peak_percent": 409.62059878295383,
+    "elapsed_seconds": 10.014757899,
+    "load_cpu": {
+      "cores": 0.171,
+      "cpu_seconds": 1.721,
+      "cpus": 8,
+      "utilization": 0.021
+    },
+    "p50_ms": 4.9936929999999995,
+    "p99_ms": 47.410418,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 65940,
+    "resources_available": true,
+    "rps": 6584.2829816769,
+    "rss_mean_mib": 293.53271484375,
+    "rss_peak_mib": 293.5625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.026,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 97.80002252333243,
+    "cpu_peak_percent": 105.34124856861223,
+    "elapsed_seconds": 10.078529364,
+    "load_cpu": {
+      "cores": 0.029,
+      "cpu_seconds": 0.29,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 75.564034,
+    "p99_ms": 154.013954,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 7690,
+    "resources_available": true,
+    "rps": 763.0081455602336,
+    "rss_mean_mib": 92.26761798469387,
+    "rss_peak_mib": 92.26953125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 395.57427825491544,
+    "cpu_peak_percent": 429.7581911776807,
+    "elapsed_seconds": 10.021357434,
+    "load_cpu": {
+      "cores": 0.076,
+      "cpu_seconds": 0.769,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 16.855753,
+    "p99_ms": 79.196213,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 25388,
+    "resources_available": true,
+    "rps": 2533.389330457844,
+    "rss_mean_mib": 287.1923014322917,
+    "rss_peak_mib": 287.2109375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 98.85327953569094,
+    "cpu_peak_percent": 105.50217435730475,
+    "elapsed_seconds": 10.086123667,
+    "load_cpu": {
+      "cores": 0.025,
+      "cpu_seconds": 0.248,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 86.432942,
+    "p99_ms": 169.380726,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 6777,
+    "resources_available": true,
+    "rps": 671.9132368139741,
+    "rss_mean_mib": 106.36933992346938,
+    "rss_peak_mib": 106.5859375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 395.5317861533787,
+    "cpu_peak_percent": 413.947836359447,
+    "elapsed_seconds": 10.043143163,
+    "load_cpu": {
+      "cores": 0.067,
+      "cpu_seconds": 0.676,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 23.117945000000002,
+    "p99_ms": 104.34639299999999,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 23101,
+    "resources_available": true,
+    "rps": 2300.1763118449335,
+    "rss_mean_mib": 332.8136393229167,
+    "rss_peak_mib": 336.65625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 98.01121493245928,
+    "cpu_peak_percent": 105.4455388008041,
+    "elapsed_seconds": 10.061414102,
+    "load_cpu": {
+      "cores": 0.033,
+      "cpu_seconds": 0.338,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 53.782261999999996,
+    "p99_ms": 127.203376,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 10688,
+    "resources_available": true,
+    "rps": 1062.276126561121,
+    "rss_mean_mib": 91.80030293367346,
+    "rss_peak_mib": 91.8046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 397.1207786958973,
+    "cpu_peak_percent": 418.60579461798267,
+    "elapsed_seconds": 10.049184338,
+    "load_cpu": {
+      "cores": 0.08,
+      "cpu_seconds": 0.81,
+      "cpus": 8,
+      "utilization": 0.01
+    },
+    "p50_ms": 6.603862,
+    "p99_ms": 101.327319,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 33082,
+    "resources_available": true,
+    "rps": 3292.0084742503605,
+    "rss_mean_mib": 309.6490071614583,
+    "rss_peak_mib": 311.5390625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 395.0389583231475,
+    "cpu_peak_percent": 422.7980521766467,
+    "elapsed_seconds": 10.023366692,
+    "load_cpu": {
+      "cores": 0.09,
+      "cpu_seconds": 0.907,
+      "cpus": 8,
+      "utilization": 0.011
+    },
+    "p50_ms": 15.085736,
+    "p99_ms": 68.741828,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 35409,
+    "resources_available": true,
+    "rps": 3532.64537635455,
+    "rss_mean_mib": 286.4208170572917,
+    "rss_peak_mib": 286.46875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 98.99524182987318,
+    "cpu_peak_percent": 105.54604395999942,
+    "elapsed_seconds": 10.058034737,
+    "load_cpu": {
+      "cores": 0.034,
+      "cpu_seconds": 0.341,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 57.272226,
+    "p99_ms": 135.955422,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 9949,
+    "resources_available": true,
+    "rps": 989.1594392094413,
+    "rss_mean_mib": 100.42251275510205,
+    "rss_peak_mib": 100.6640625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 393.85204396014893,
+    "cpu_peak_percent": 412.6676759807923,
+    "elapsed_seconds": 10.065277067,
+    "load_cpu": {
+      "cores": 0.046,
+      "cpu_seconds": 0.462,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 45.770584,
+    "p99_ms": 87.407152,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 15010,
+    "resources_available": true,
+    "rps": 1491.2654564882034,
+    "rss_mean_mib": 329.278076171875,
+    "rss_peak_mib": 330.40234375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.04,
+        "cpus": 4,
+        "utilization": 0.26
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 99.09453741296143,
+    "cpu_peak_percent": 105.46348357003541,
+    "elapsed_seconds": 10.135068463,
+    "load_cpu": {
+      "cores": 0.017,
+      "cpu_seconds": 0.176,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 134.44772,
+    "p99_ms": 165.420411,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 4736,
+    "resources_available": true,
+    "rps": 467.2884073047628,
+    "rss_mean_mib": 103.04097576530613,
+    "rss_peak_mib": 103.0703125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.287,
+        "cpus": 4,
+        "utilization": 0.072
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 387.7790108897111,
+    "cpu_peak_percent": 425.83518622439993,
+    "elapsed_seconds": 10.107943628,
+    "load_cpu": {
+      "cores": 0.038,
+      "cpu_seconds": 0.386,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 45.127190999999996,
+    "p99_ms": 147.75623299999998,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 10834,
+    "resources_available": true,
+    "rps": 1071.830275150007,
+    "rss_mean_mib": 359.83935546875,
+    "rss_peak_mib": 361.30078125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.783,
+        "cpus": 4,
+        "utilization": 0.196
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 99.18355208457022,
+    "cpu_peak_percent": 104.97461281698463,
+    "elapsed_seconds": 10.213376091,
+    "load_cpu": {
+      "cores": 0.016,
+      "cpu_seconds": 0.167,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 198.330987,
+    "p99_ms": 255.377533,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 3222,
+    "resources_available": true,
+    "rps": 315.4686531948253,
+    "rss_mean_mib": 110.96603954081633,
+    "rss_peak_mib": 111.03125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.226,
+        "cpus": 4,
+        "utilization": 0.057
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 389.83400291138906,
+    "cpu_peak_percent": 419.723935031908,
+    "elapsed_seconds": 10.043193366,
+    "load_cpu": {
+      "cores": 0.077,
+      "cpu_seconds": 0.771,
+      "cpus": 8,
+      "utilization": 0.01
+    },
+    "p50_ms": 16.844425,
+    "p99_ms": 52.824914,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 29131,
+    "resources_available": true,
+    "rps": 2900.5714555511227,
+    "rss_mean_mib": 304.231201171875,
+    "rss_peak_mib": 304.4609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.022,
+        "cpus": 4,
+        "utilization": 0.256
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 379.8112629814535,
+    "cpu_peak_percent": 398.5121966195113,
+    "elapsed_seconds": 10.062509308,
+    "load_cpu": {
+      "cores": 0.056,
+      "cpu_seconds": 0.563,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 39.361127,
+    "p99_ms": 74.881793,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 21331,
+    "resources_available": true,
+    "rps": 2119.8489707772205,
+    "rss_mean_mib": 312.7300531914894,
+    "rss_peak_mib": 313.92578125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.721,
+        "cpus": 4,
+        "utilization": 0.18
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 99.6146509127489,
+    "cpu_peak_percent": 105.22572726503856,
+    "elapsed_seconds": 10.094595031,
+    "load_cpu": {
+      "cores": 0.022,
+      "cpu_seconds": 0.227,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 96.710641,
+    "p99_ms": 135.697136,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 6512,
+    "resources_available": true,
+    "rps": 645.0976963416532,
+    "rss_mean_mib": 100.2421875,
+    "rss_peak_mib": 100.48046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.214,
+        "cpus": 4,
+        "utilization": 0.054
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 98.87555070547768,
+    "cpu_peak_percent": 105.07610937957996,
+    "elapsed_seconds": 10.076972541,
+    "load_cpu": {
+      "cores": 0.026,
+      "cpu_seconds": 0.264,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 70.402971,
+    "p99_ms": 95.577573,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 8992,
+    "resources_available": true,
+    "rps": 892.3314977206109,
+    "rss_mean_mib": 96.26594387755102,
+    "rss_peak_mib": 96.32421875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.26,
+        "cpus": 4,
+        "utilization": 0.065
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 99.51130137242305,
+    "cpu_peak_percent": 105.2976411232045,
+    "elapsed_seconds": 10.440318379,
+    "load_cpu": {
+      "cores": 0.011,
+      "cpu_seconds": 0.117,
+      "cpus": 8,
+      "utilization": 0.001
+    },
+    "p50_ms": 368.984779,
+    "p99_ms": 489.358045,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 1753,
+    "resources_available": true,
+    "rps": 167.90675689795455,
+    "rss_mean_mib": 125.915703125,
+    "rss_peak_mib": 126.91015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.172,
+        "cpus": 4,
+        "utilization": 0.043
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 389.60066375421036,
+    "cpu_peak_percent": 430.9686218872179,
+    "elapsed_seconds": 10.248891749,
+    "load_cpu": {
+      "cores": 0.032,
+      "cpu_seconds": 0.329,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 93.816708,
+    "p99_ms": 322.269116,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 5173,
+    "resources_available": true,
+    "rps": 504.73750008187346,
+    "rss_mean_mib": 410.9024251302083,
+    "rss_peak_mib": 416.08203125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.555,
+        "cpus": 4,
+        "utilization": 0.139
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 388.6994431043749,
+    "cpu_peak_percent": 427.5134603623433,
+    "elapsed_seconds": 10.276767441,
+    "load_cpu": {
+      "cores": 0.027,
+      "cpu_seconds": 0.281,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 89.04403900000001,
+    "p99_ms": 520.171238,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 3977,
+    "resources_available": true,
+    "rps": 386.9893935843517,
+    "rss_mean_mib": 492.7351888020833,
+    "rss_peak_mib": 500.07421875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.434,
+        "cpus": 4,
+        "utilization": 0.108
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 98.97790046967086,
+    "cpu_peak_percent": 108.00890742799012,
+    "elapsed_seconds": 10.428296389,
+    "load_cpu": {
+      "cores": 0.01,
+      "cpu_seconds": 0.11,
+      "cpus": 8,
+      "utilization": 0.001
+    },
+    "p50_ms": 541.42997,
+    "p99_ms": 685.177154,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 1224,
+    "resources_available": true,
+    "rps": 117.37295856791168,
+    "rss_mean_mib": 145.183359375,
+    "rss_peak_mib": 146.640625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.131,
+        "cpus": 4,
+        "utilization": 0.033
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 99.37386041169134,
+    "cpu_peak_percent": 105.40214397914917,
+    "elapsed_seconds": 10.025223622,
+    "load_cpu": {
+      "cores": 0.062,
+      "cpu_seconds": 0.624,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 20.41792,
+    "p99_ms": 73.472646,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 27641,
+    "resources_available": true,
+    "rps": 2757.1454804601863,
+    "rss_mean_mib": 91.145751953125,
+    "rss_peak_mib": 91.24609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.02,
+        "cpus": 4,
+        "utilization": 0.005
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 396.26132081733004,
+    "cpu_peak_percent": 419.28736760022184,
+    "elapsed_seconds": 10.019135229,
+    "load_cpu": {
+      "cores": 0.168,
+      "cpu_seconds": 1.689,
+      "cpus": 8,
+      "utilization": 0.021
+    },
+    "p50_ms": 3.016398,
+    "p99_ms": 43.199371,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 93324,
+    "resources_available": true,
+    "rps": 9314.576344860312,
+    "rss_mean_mib": 283.41015625,
+    "rss_peak_mib": 283.6875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 392.29219861764545,
+    "cpu_peak_percent": 416.6900702338637,
+    "elapsed_seconds": 10.010640281,
+    "load_cpu": {
+      "cores": 0.227,
+      "cpu_seconds": 2.284,
+      "cpus": 8,
+      "utilization": 0.028
+    },
+    "p50_ms": 2.815677,
+    "p99_ms": 30.231414,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 128093,
+    "resources_available": true,
+    "rps": 12795.685031567662,
+    "rss_mean_mib": 285.9017740885417,
+    "rss_peak_mib": 285.91015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 97.3773047549471,
+    "cpu_peak_percent": 105.53056227779626,
+    "elapsed_seconds": 10.0182188,
+    "load_cpu": {
+      "cores": 0.073,
+      "cpu_seconds": 0.737,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 13.879304,
+    "p99_ms": 54.897475,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 41041,
+    "resources_available": true,
+    "rps": 4096.636420039059,
+    "rss_mean_mib": 91.62436224489795,
+    "rss_peak_mib": 91.63671875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 390.54877144873296,
+    "cpu_peak_percent": 420.22796340707214,
+    "elapsed_seconds": 10.009165955,
+    "load_cpu": {
+      "cores": 0.227,
+      "cpu_seconds": 2.287,
+      "cpus": 8,
+      "utilization": 0.028
+    },
+    "p50_ms": 4.686855,
+    "p99_ms": 34.666188,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 107079,
+    "resources_available": true,
+    "rps": 10698.0941750206,
+    "rss_mean_mib": 287.7548828125,
+    "rss_peak_mib": 287.79296875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.03,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 99.52572230591937,
+    "cpu_peak_percent": 105.32562003574053,
+    "elapsed_seconds": 10.049558598,
+    "load_cpu": {
+      "cores": 0.035,
+      "cpu_seconds": 0.35,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 46.32918,
+    "p99_ms": 123.392138,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 12155,
+    "resources_available": true,
+    "rps": 1209.5058585378079,
+    "rss_mean_mib": 94.68505859375,
+    "rss_peak_mib": 94.97265625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 99.19867834974632,
+    "cpu_peak_percent": 105.24983140433619,
+    "elapsed_seconds": 10.020112466,
+    "load_cpu": {
+      "cores": 0.073,
+      "cpu_seconds": 0.736,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 16.908941,
+    "p99_ms": 63.824269,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 33778,
+    "resources_available": true,
+    "rps": 3371.0200473911527,
+    "rss_mean_mib": 91.85831705729167,
+    "rss_peak_mib": 91.8671875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.026,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 392.78934411640876,
+    "cpu_peak_percent": 428.0381088402199,
+    "elapsed_seconds": 10.039719179,
+    "load_cpu": {
+      "cores": 0.097,
+      "cpu_seconds": 0.977,
+      "cpus": 8,
+      "utilization": 0.012
+    },
+    "p50_ms": 6.458166,
+    "p99_ms": 83.65956800000001,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 40689,
+    "resources_available": true,
+    "rps": 4052.8026008046972,
+    "rss_mean_mib": 297.9034016927083,
+    "rss_peak_mib": 298.328125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 392.5875627884687,
+    "cpu_peak_percent": 425.04345673872905,
+    "elapsed_seconds": 10.095608239,
+    "load_cpu": {
+      "cores": 0.049,
+      "cpu_seconds": 0.494,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 57.94191,
+    "p99_ms": 187.314608,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 9905,
+    "resources_available": true,
+    "rps": 981.1196874435293,
+    "rss_mean_mib": 358.5963541666667,
+    "rss_peak_mib": 363.625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.03,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 390.05453697211294,
+    "cpu_peak_percent": 418.927145129745,
+    "elapsed_seconds": 10.027327778,
+    "load_cpu": {
+      "cores": 0.124,
+      "cpu_seconds": 1.25,
+      "cpus": 8,
+      "utilization": 0.015
+    },
+    "p50_ms": 12.492321,
+    "p99_ms": 72.076252,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 40734,
+    "resources_available": true,
+    "rps": 4062.2986404583853,
+    "rss_mean_mib": 292.8326822916667,
+    "rss_peak_mib": 292.87890625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 99.56110410791042,
+    "cpu_peak_percent": 105.3045315642137,
+    "elapsed_seconds": 10.048567561,
+    "load_cpu": {
+      "cores": 0.039,
+      "cpu_seconds": 0.393,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 46.018374,
+    "p99_ms": 116.453959,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 12537,
+    "resources_available": true,
+    "rps": 1247.640514321462,
+    "rss_mean_mib": 93.49544270833333,
+    "rss_peak_mib": 93.5,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 99.46282448120608,
+    "cpu_peak_percent": 105.40043116901758,
+    "elapsed_seconds": 10.192509786,
+    "load_cpu": {
+      "cores": 0.017,
+      "cpu_seconds": 0.172,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 204.358282,
+    "p99_ms": 300.42798,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 3090,
+    "resources_available": true,
+    "rps": 303.1638001706207,
+    "rss_mean_mib": 113.33633609693878,
+    "rss_peak_mib": 113.734375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 394.2624570881835,
+    "cpu_peak_percent": 414.0894929103145,
+    "elapsed_seconds": 10.057203229,
+    "load_cpu": {
+      "cores": 0.082,
+      "cpu_seconds": 0.829,
+      "cpus": 8,
+      "utilization": 0.01
+    },
+    "p50_ms": 14.229108,
+    "p99_ms": 92.853623,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 34227,
+    "resources_available": true,
+    "rps": 3403.2324117013227,
+    "rss_mean_mib": 319.862548828125,
+    "rss_peak_mib": 321.15234375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 389.698912073944,
+    "cpu_peak_percent": 414.73415062874545,
+    "elapsed_seconds": 10.027887972,
+    "load_cpu": {
+      "cores": 0.103,
+      "cpu_seconds": 1.034,
+      "cpus": 8,
+      "utilization": 0.013
+    },
+    "p50_ms": 10.871166,
+    "p99_ms": 81.67246,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 34237,
+    "resources_available": true,
+    "rps": 3414.1785484238553,
+    "rss_mean_mib": 297.6400553385417,
+    "rss_peak_mib": 298.046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.03,
+        "cpus": 4,
+        "utilization": 0.008
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 99.62726934846842,
+    "cpu_peak_percent": 105.50057809207874,
+    "elapsed_seconds": 10.054939959,
+    "load_cpu": {
+      "cores": 0.03,
+      "cpu_seconds": 0.305,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 56.690573,
+    "p99_ms": 144.107084,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 9707,
+    "resources_available": true,
+    "rps": 965.3961176875487,
+    "rss_mean_mib": 101.67179361979167,
+    "rss_peak_mib": 101.76953125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.026,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 98.92338300922881,
+    "cpu_peak_percent": 105.44632968160117,
+    "elapsed_seconds": 10.080508137,
+    "load_cpu": {
+      "cores": 0.03,
+      "cpu_seconds": 0.303,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 50.306796,
+    "p99_ms": 125.034759,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 11282,
+    "resources_available": true,
+    "rps": 1119.1896129313147,
+    "rss_mean_mib": 95.27391581632654,
+    "rss_peak_mib": 95.3671875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 366.79633317468836,
+    "cpu_peak_percent": 407.8414808604729,
+    "elapsed_seconds": 1.5801524150000001,
+    "load_cpu": {
+      "cores": 0.046,
+      "cpu_seconds": 0.074,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 34.149633,
+    "p99_ms": 119.006435,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1265.700688752863,
+    "rss_mean_mib": 312.3173828125,
+    "rss_peak_mib": 312.70703125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.385,
+        "cpus": 4,
+        "utilization": 0.346
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 98.66148184705808,
+    "cpu_peak_percent": 105.34347996734144,
+    "elapsed_seconds": 4.960209611,
+    "load_cpu": {
+      "cores": 0.017,
+      "cpu_seconds": 0.084,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 156.582411,
+    "p99_ms": 182.910081,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 403.2087667353218,
+    "rss_mean_mib": 99.13899739583333,
+    "rss_peak_mib": 99.6328125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.368,
+        "cpus": 4,
+        "utilization": 0.092
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 374.74911696252605,
+    "cpu_peak_percent": 405.0440209463998,
+    "elapsed_seconds": 1.679813776,
+    "load_cpu": {
+      "cores": 0.042,
+      "cpu_seconds": 0.071,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 33.974934999999995,
+    "p99_ms": 126.46699100000001,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1190.608166556672,
+    "rss_mean_mib": 314.12646484375,
+    "rss_peak_mib": 317.80078125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.325,
+        "cpus": 4,
+        "utilization": 0.331
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 97.13597126574155,
+    "cpu_peak_percent": 105.04944510357149,
+    "elapsed_seconds": 5.258918589,
+    "load_cpu": {
+      "cores": 0.014,
+      "cpu_seconds": 0.075,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 166.536672,
+    "p99_ms": 187.641837,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 380.3063246088976,
+    "rss_mean_mib": 100.33022836538461,
+    "rss_peak_mib": 100.59375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.36,
+        "cpus": 4,
+        "utilization": 0.09
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 97.98428984253239,
+    "cpu_peak_percent": 104.65942027043124,
+    "elapsed_seconds": 4.44448846,
+    "load_cpu": {
+      "cores": 0.019,
+      "cpu_seconds": 0.086,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 139.824407,
+    "p99_ms": 184.62061,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 449.99554346913527,
+    "rss_mean_mib": 100.98419744318181,
+    "rss_peak_mib": 101.1796875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.262,
+        "cpus": 4,
+        "utilization": 0.065
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 352.3478932874234,
+    "cpu_peak_percent": 414.4966171942214,
+    "elapsed_seconds": 1.401773482,
+    "load_cpu": {
+      "cores": 0.053,
+      "cpu_seconds": 0.076,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 19.910384999999998,
+    "p99_ms": 135.364237,
+    "profile": "drf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1426.7640426087044,
+    "rss_mean_mib": 313.43582589285717,
+    "rss_peak_mib": 315.37890625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.919,
+        "cpus": 4,
+        "utilization": 0.23
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 99.48610055482453,
+    "cpu_peak_percent": 105.33089623272983,
+    "elapsed_seconds": 3.943045474,
+    "load_cpu": {
+      "cores": 0.018,
+      "cpu_seconds": 0.073,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 125.028646,
+    "p99_ms": 140.04093,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 507.2221492721238,
+    "rss_mean_mib": 97.9017269736842,
+    "rss_peak_mib": 98.3125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.277,
+        "cpus": 4,
+        "utilization": 0.069
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 334.80117252793457,
+    "cpu_peak_percent": 403.0462099180605,
+    "elapsed_seconds": 1.278532446,
+    "load_cpu": {
+      "cores": 0.053,
+      "cpu_seconds": 0.069,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 24.552527,
+    "p99_ms": 119.004309,
+    "profile": "fastdrf",
+    "repeat": 1,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1564.293504053944,
+    "rss_mean_mib": 309.4642857142857,
+    "rss_peak_mib": 309.5234375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.009,
+        "cpus": 4,
+        "utilization": 0.252
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "small",
+    "cpu_mean_percent": 97.76904769723915,
+    "cpu_peak_percent": 105.89316445262598,
+    "elapsed_seconds": 10.024204111,
+    "load_cpu": {
+      "cores": 0.06,
+      "cpu_seconds": 0.599,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 19.180617,
+    "p99_ms": 71.431236,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 29227,
+    "resources_available": true,
+    "rps": 2915.6429454511936,
+    "rss_mean_mib": 91.51442920918367,
+    "rss_peak_mib": 91.6484375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "small",
+    "cpu_mean_percent": 97.56970032153001,
+    "cpu_peak_percent": 105.42821806258891,
+    "elapsed_seconds": 10.015679163,
+    "load_cpu": {
+      "cores": 0.072,
+      "cpu_seconds": 0.73,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 13.069792,
+    "p99_ms": 53.533915,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 43554,
+    "resources_available": true,
+    "rps": 4348.58178773313,
+    "rss_mean_mib": 91.59685905612245,
+    "rss_peak_mib": 91.609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "small",
+    "cpu_mean_percent": 396.1661203107705,
+    "cpu_peak_percent": 413.65947697740285,
+    "elapsed_seconds": 10.01046531,
+    "load_cpu": {
+      "cores": 0.219,
+      "cpu_seconds": 2.205,
+      "cpus": 8,
+      "utilization": 0.027
+    },
+    "p50_ms": 2.993379,
+    "p99_ms": 30.185119999999998,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 139667,
+    "resources_available": true,
+    "rps": 13952.098696199368,
+    "rss_mean_mib": 284.7566731770833,
+    "rss_peak_mib": 284.7734375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "small",
+    "cpu_mean_percent": 393.19794435300014,
+    "cpu_peak_percent": 418.19257235452943,
+    "elapsed_seconds": 10.012310163,
+    "load_cpu": {
+      "cores": 0.175,
+      "cpu_seconds": 1.765,
+      "cpus": 8,
+      "utilization": 0.022
+    },
+    "p50_ms": 5.704835,
+    "p99_ms": 39.757253,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 92909,
+    "resources_available": true,
+    "rps": 9279.476812787985,
+    "rss_mean_mib": 283.337158203125,
+    "rss_peak_mib": 284.03515625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 99.54006012480401,
+    "cpu_peak_percent": 105.48404449299862,
+    "elapsed_seconds": 10.050275068,
+    "load_cpu": {
+      "cores": 0.032,
+      "cpu_seconds": 0.32,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 51.946565,
+    "p99_ms": 132.242181,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 10763,
+    "resources_available": true,
+    "rps": 1070.9159627152208,
+    "rss_mean_mib": 98.85660807291667,
+    "rss_peak_mib": 99.0859375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 395.583742836179,
+    "cpu_peak_percent": 413.461470955911,
+    "elapsed_seconds": 10.011024999,
+    "load_cpu": {
+      "cores": 0.192,
+      "cpu_seconds": 1.934,
+      "cpus": 8,
+      "utilization": 0.024
+    },
+    "p50_ms": 2.877405,
+    "p99_ms": 32.904638,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 118759,
+    "resources_available": true,
+    "rps": 11862.821240768335,
+    "rss_mean_mib": 287.3570963541667,
+    "rss_peak_mib": 287.375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 99.39907163499495,
+    "cpu_peak_percent": 105.32383093581103,
+    "elapsed_seconds": 10.018951654,
+    "load_cpu": {
+      "cores": 0.066,
+      "cpu_seconds": 0.665,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 15.46591,
+    "p99_ms": 60.596372,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 36734,
+    "resources_available": true,
+    "rps": 3666.451468036997,
+    "rss_mean_mib": 92.09586588541667,
+    "rss_peak_mib": 92.1015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "wide",
+    "cpu_mean_percent": 394.3014654102058,
+    "cpu_peak_percent": 409.5282620214435,
+    "elapsed_seconds": 10.027786626,
+    "load_cpu": {
+      "cores": 0.085,
+      "cpu_seconds": 0.86,
+      "cpus": 8,
+      "utilization": 0.011
+    },
+    "p50_ms": 9.886221,
+    "p99_ms": 78.05023399999999,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 37518,
+    "resources_available": true,
+    "rps": 3741.40390090905,
+    "rss_mean_mib": 310.5087076822917,
+    "rss_peak_mib": 311.75,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 393.0752360651599,
+    "cpu_peak_percent": 413.470089518148,
+    "elapsed_seconds": 10.060424627,
+    "load_cpu": {
+      "cores": 0.067,
+      "cpu_seconds": 0.678,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 10.613825,
+    "p99_ms": 123.38584499999999,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 24601,
+    "resources_available": true,
+    "rps": 2445.3242196135784,
+    "rss_mean_mib": 312.3424479166667,
+    "rss_peak_mib": 315.4375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 395.5332753616597,
+    "cpu_peak_percent": 416.72177367637084,
+    "elapsed_seconds": 10.017282342,
+    "load_cpu": {
+      "cores": 0.133,
+      "cpu_seconds": 1.338,
+      "cpus": 8,
+      "utilization": 0.017
+    },
+    "p50_ms": 4.519286,
+    "p99_ms": 51.980285,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 63658,
+    "resources_available": true,
+    "rps": 6354.8173872565885,
+    "rss_mean_mib": 287.177978515625,
+    "rss_peak_mib": 287.19140625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 97.66391232460599,
+    "cpu_peak_percent": 105.35057714839353,
+    "elapsed_seconds": 10.034157057,
+    "load_cpu": {
+      "cores": 0.048,
+      "cpu_seconds": 0.482,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 29.592726,
+    "p99_ms": 90.517204,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 19293,
+    "resources_available": true,
+    "rps": 1922.7325116005507,
+    "rss_mean_mib": 91.96492346938776,
+    "rss_peak_mib": 91.96875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-100",
+    "cpu_mean_percent": 99.02110000542723,
+    "cpu_peak_percent": 105.45834721049133,
+    "elapsed_seconds": 10.093155535,
+    "load_cpu": {
+      "cores": 0.026,
+      "cpu_seconds": 0.267,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 77.179507,
+    "p99_ms": 159.21606899999998,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 7463,
+    "resources_available": true,
+    "rps": 739.4119682512155,
+    "rss_mean_mib": 101.72233737244898,
+    "rss_peak_mib": 102.1015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 99.43037104713083,
+    "cpu_peak_percent": 105.44231950533312,
+    "elapsed_seconds": 10.153126713,
+    "load_cpu": {
+      "cores": 0.027,
+      "cpu_seconds": 0.27,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 164.89225299999998,
+    "p99_ms": 250.93546500000002,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 3746,
+    "resources_available": true,
+    "rps": 368.9503840431386,
+    "rss_mean_mib": 96.62619579081633,
+    "rss_peak_mib": 96.640625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 392.84053714653726,
+    "cpu_peak_percent": 417.765992506493,
+    "elapsed_seconds": 10.112527085,
+    "load_cpu": {
+      "cores": 0.077,
+      "cpu_seconds": 0.785,
+      "cpus": 8,
+      "utilization": 0.01
+    },
+    "p50_ms": 29.822253,
+    "p99_ms": 202.494322,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 11610,
+    "resources_available": true,
+    "rps": 1148.0809794043682,
+    "rss_mean_mib": 306.3895670572917,
+    "rss_peak_mib": 306.421875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.03,
+        "cpus": 4,
+        "utilization": 0.008
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 98.01529684585991,
+    "cpu_peak_percent": 105.39776788806046,
+    "elapsed_seconds": 10.510502241,
+    "load_cpu": {
+      "cores": 0.012,
+      "cpu_seconds": 0.125,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 592.257496,
+    "p99_ms": 800.2332,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 1109,
+    "resources_available": true,
+    "rps": 105.51351158786171,
+    "rss_mean_mib": 160.01049325980392,
+    "rss_peak_mib": 165.4921875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-1000",
+    "cpu_mean_percent": 391.6389888668697,
+    "cpu_peak_percent": 406.366585037044,
+    "elapsed_seconds": 10.218327936,
+    "load_cpu": {
+      "cores": 0.033,
+      "cpu_seconds": 0.334,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 165.822611,
+    "p99_ms": 442.008452,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 3677,
+    "resources_available": true,
+    "rps": 359.8436087616282,
+    "rss_mean_mib": 506.3146524234694,
+    "rss_peak_mib": 525.8046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 99.31806864585431,
+    "cpu_peak_percent": 105.47871149564814,
+    "elapsed_seconds": 11.54931376,
+    "load_cpu": {
+      "cores": 0.013,
+      "cpu_seconds": 0.151,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 1587.002392,
+    "p99_ms": 1947.118984,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 454,
+    "resources_available": true,
+    "rps": 39.30969488181954,
+    "rss_mean_mib": 160.98200334821428,
+    "rss_peak_mib": 162.671875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.021,
+        "cpus": 4,
+        "utilization": 0.005
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 99.37518307147644,
+    "cpu_peak_percent": 105.48382958479606,
+    "elapsed_seconds": 15.191501796,
+    "load_cpu": {
+      "cores": 0.005,
+      "cpu_seconds": 0.072,
+      "cpus": 8,
+      "utilization": 0.001
+    },
+    "p50_ms": 5377.656568,
+    "p99_ms": 6166.774466,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 174,
+    "resources_available": true,
+    "rps": 11.453772137644421,
+    "rss_mean_mib": 298.0275042808219,
+    "rss_peak_mib": 335.3359375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 323.1015935115838,
+    "cpu_peak_percent": 417.38594210671727,
+    "elapsed_seconds": 13.527417763,
+    "load_cpu": {
+      "cores": 0.012,
+      "cpu_seconds": 0.165,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 904.088225,
+    "p99_ms": 4890.655148000001,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 451,
+    "resources_available": true,
+    "rps": 33.339696304313804,
+    "rss_mean_mib": 1008.3291466346154,
+    "rss_peak_mib": 1084.90234375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "list-10000",
+    "cpu_mean_percent": 380.7480521002647,
+    "cpu_peak_percent": 414.08222922990643,
+    "elapsed_seconds": 10.618179307,
+    "load_cpu": {
+      "cores": 0.042,
+      "cpu_seconds": 0.45,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 454.65897900000004,
+    "p99_ms": 1156.685097,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 1302,
+    "resources_available": true,
+    "rps": 122.61989201309312,
+    "rss_mean_mib": 570.2693014705883,
+    "rss_peak_mib": 574.03125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 396.29094855626016,
+    "cpu_peak_percent": 432.28604628792004,
+    "elapsed_seconds": 10.020448663,
+    "load_cpu": {
+      "cores": 0.101,
+      "cpu_seconds": 1.02,
+      "cpus": 8,
+      "utilization": 0.013
+    },
+    "p50_ms": 8.557446,
+    "p99_ms": 58.22,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 51505,
+    "resources_available": true,
+    "rps": 5139.989408875434,
+    "rss_mean_mib": 291.6837565104167,
+    "rss_peak_mib": 292.32421875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 395.0032665836586,
+    "cpu_peak_percent": 427.98706941071384,
+    "elapsed_seconds": 10.016283001,
+    "load_cpu": {
+      "cores": 0.182,
+      "cpu_seconds": 1.828,
+      "cpus": 8,
+      "utilization": 0.023
+    },
+    "p50_ms": 2.733914,
+    "p99_ms": 38.399221999999995,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 105977,
+    "resources_available": true,
+    "rps": 10580.471816682848,
+    "rss_mean_mib": 286.2735188802083,
+    "rss_peak_mib": 286.2890625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 99.53083112273015,
+    "cpu_peak_percent": 106.28628714395253,
+    "elapsed_seconds": 10.043185235,
+    "load_cpu": {
+      "cores": 0.041,
+      "cpu_seconds": 0.418,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 37.845595,
+    "p99_ms": 106.926515,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 14889,
+    "resources_available": true,
+    "rps": 1482.4977984188301,
+    "rss_mean_mib": 93.80558268229167,
+    "rss_peak_mib": 94.1796875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.022,
+        "cpus": 4,
+        "utilization": 0.005
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "nested",
+    "cpu_mean_percent": 99.23896474434324,
+    "cpu_peak_percent": 105.95398648299445,
+    "elapsed_seconds": 10.022169665,
+    "load_cpu": {
+      "cores": 0.064,
+      "cpu_seconds": 0.648,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 17.101607,
+    "p99_ms": 64.708387,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 33223,
+    "resources_available": true,
+    "rps": 3314.9508649831864,
+    "rss_mean_mib": 91.62255859375,
+    "rss_peak_mib": 91.63671875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 395.6207719962475,
+    "cpu_peak_percent": 418.44737048337333,
+    "elapsed_seconds": 10.018369389,
+    "load_cpu": {
+      "cores": 0.137,
+      "cpu_seconds": 1.384,
+      "cpus": 8,
+      "utilization": 0.017
+    },
+    "p50_ms": 6.618605,
+    "p99_ms": 50.441244000000005,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 74204,
+    "resources_available": true,
+    "rps": 7406.794171661782,
+    "rss_mean_mib": 288.2342122395833,
+    "rss_peak_mib": 288.25,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 97.63307302613124,
+    "cpu_peak_percent": 105.44386494030935,
+    "elapsed_seconds": 10.027693405,
+    "load_cpu": {
+      "cores": 0.055,
+      "cpu_seconds": 0.553,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 24.922572,
+    "p99_ms": 81.730655,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 22972,
+    "resources_available": true,
+    "rps": 2290.8558401422324,
+    "rss_mean_mib": 92.23732461734694,
+    "rss_peak_mib": 92.24609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 396.4809666319137,
+    "cpu_peak_percent": 412.6178654333982,
+    "elapsed_seconds": 10.04868796,
+    "load_cpu": {
+      "cores": 0.07,
+      "cpu_seconds": 0.703,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 18.341919,
+    "p99_ms": 101.532234,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 26582,
+    "resources_available": true,
+    "rps": 2645.320474256223,
+    "rss_mean_mib": 309.7076822916667,
+    "rss_peak_mib": 311.16015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "deep",
+    "cpu_mean_percent": 97.78244876862281,
+    "cpu_peak_percent": 110.18898099925822,
+    "elapsed_seconds": 10.072277306,
+    "load_cpu": {
+      "cores": 0.027,
+      "cpu_seconds": 0.277,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 71.214436,
+    "p99_ms": 157.35826699999998,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 7938,
+    "resources_available": true,
+    "rps": 788.1037980627655,
+    "rss_mean_mib": 99.29025829081633,
+    "rss_peak_mib": 99.34375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 391.95135463334435,
+    "cpu_peak_percent": 420.5863182897292,
+    "elapsed_seconds": 10.092677723,
+    "load_cpu": {
+      "cores": 0.051,
+      "cpu_seconds": 0.517,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 15.132773,
+    "p99_ms": 170.886247,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 16195,
+    "resources_available": true,
+    "rps": 1604.6286668892183,
+    "rss_mean_mib": 331.5361328125,
+    "rss_peak_mib": 336.95703125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 396.49244760661617,
+    "cpu_peak_percent": 417.74851671206187,
+    "elapsed_seconds": 10.031809128,
+    "load_cpu": {
+      "cores": 0.107,
+      "cpu_seconds": 1.072,
+      "cpus": 8,
+      "utilization": 0.013
+    },
+    "p50_ms": 10.468705,
+    "p99_ms": 74.2838,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 44615,
+    "resources_available": true,
+    "rps": 4447.353356781291,
+    "rss_mean_mib": 288.4597981770833,
+    "rss_peak_mib": 288.48046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 98.76203378280108,
+    "cpu_peak_percent": 105.46528189083261,
+    "elapsed_seconds": 10.114573451,
+    "load_cpu": {
+      "cores": 0.021,
+      "cpu_seconds": 0.213,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 124.08978900000001,
+    "p99_ms": 212.084645,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 4833,
+    "resources_available": true,
+    "rps": 477.8253896136544,
+    "rss_mean_mib": 108.81042729591837,
+    "rss_peak_mib": 109.33984375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "types",
+    "cpu_mean_percent": 99.7458805402259,
+    "cpu_peak_percent": 109.89546495792499,
+    "elapsed_seconds": 10.05049954,
+    "load_cpu": {
+      "cores": 0.042,
+      "cpu_seconds": 0.421,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 42.735382,
+    "p99_ms": 110.55205,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 13428,
+    "resources_available": true,
+    "rps": 1336.052993839548,
+    "rss_mean_mib": 92.271728515625,
+    "rss_peak_mib": 92.27734375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 395.879706092668,
+    "cpu_peak_percent": 419.21383533849934,
+    "elapsed_seconds": 10.015940324,
+    "load_cpu": {
+      "cores": 0.172,
+      "cpu_seconds": 1.735,
+      "cpus": 8,
+      "utilization": 0.021
+    },
+    "p50_ms": 4.8729000000000005,
+    "p99_ms": 50.189777,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 65532,
+    "resources_available": true,
+    "rps": 6542.770611659247,
+    "rss_mean_mib": 293.3978678385417,
+    "rss_peak_mib": 293.4296875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.021,
+        "cpus": 4,
+        "utilization": 0.005
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 396.4228251308543,
+    "cpu_peak_percent": 415.0138182688786,
+    "elapsed_seconds": 10.033613671,
+    "load_cpu": {
+      "cores": 0.14,
+      "cpu_seconds": 1.41,
+      "cpus": 8,
+      "utilization": 0.018
+    },
+    "p50_ms": 4.725669,
+    "p99_ms": 74.81818299999999,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 50281,
+    "resources_available": true,
+    "rps": 5011.255331200005,
+    "rss_mean_mib": 343.6283365885417,
+    "rss_peak_mib": 351.6796875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 97.51089431971882,
+    "cpu_peak_percent": 105.63007678864264,
+    "elapsed_seconds": 10.043387622,
+    "load_cpu": {
+      "cores": 0.05,
+      "cpu_seconds": 0.506,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 37.022257,
+    "p99_ms": 103.807145,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 15276,
+    "resources_available": true,
+    "rps": 1521.000739485349,
+    "rss_mean_mib": 113.47544642857143,
+    "rss_peak_mib": 118.42578125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "text-heavy",
+    "cpu_mean_percent": 97.448000941635,
+    "cpu_peak_percent": 105.41143948444383,
+    "elapsed_seconds": 10.03447393,
+    "load_cpu": {
+      "cores": 0.063,
+      "cpu_seconds": 0.632,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 29.343342,
+    "p99_ms": 90.717907,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 19477,
+    "resources_available": true,
+    "rps": 1941.0085806062777,
+    "rss_mean_mib": 93.32206632653062,
+    "rss_peak_mib": 93.328125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 98.95711675655988,
+    "cpu_peak_percent": 105.92680396730181,
+    "elapsed_seconds": 10.084929625,
+    "load_cpu": {
+      "cores": 0.025,
+      "cpu_seconds": 0.251,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 83.77410400000001,
+    "p99_ms": 167.329081,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 6924,
+    "resources_available": true,
+    "rps": 686.5689952695134,
+    "rss_mean_mib": 106.14955357142857,
+    "rss_peak_mib": 106.5078125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 396.40877851237946,
+    "cpu_peak_percent": 413.513205108835,
+    "elapsed_seconds": 10.052761714,
+    "load_cpu": {
+      "cores": 0.067,
+      "cpu_seconds": 0.677,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 16.513914,
+    "p99_ms": 116.75094399999999,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 22872,
+    "resources_available": true,
+    "rps": 2275.1956776362517,
+    "rss_mean_mib": 330.1888020833333,
+    "rss_peak_mib": 333.4296875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 97.8980115088244,
+    "cpu_peak_percent": 106.67766513975734,
+    "elapsed_seconds": 10.081704348,
+    "load_cpu": {
+      "cores": 0.026,
+      "cpu_seconds": 0.266,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 73.391448,
+    "p99_ms": 151.15104200000002,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 7875,
+    "resources_available": true,
+    "rps": 781.1179269070943,
+    "rss_mean_mib": 92.15625,
+    "rss_peak_mib": 92.16015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "method-field",
+    "cpu_mean_percent": 394.79784741604794,
+    "cpu_peak_percent": 422.682114235315,
+    "elapsed_seconds": 10.061807352,
+    "load_cpu": {
+      "cores": 0.072,
+      "cpu_seconds": 0.732,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 6.7667150000000005,
+    "p99_ms": 126.38618400000001,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 25124,
+    "resources_available": true,
+    "rps": 2496.9669087339526,
+    "rss_mean_mib": 288.0556640625,
+    "rss_peak_mib": 288.07421875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 99.39318940982793,
+    "cpu_peak_percent": 109.27928983330627,
+    "elapsed_seconds": 10.064933476,
+    "load_cpu": {
+      "cores": 0.039,
+      "cpu_seconds": 0.395,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 57.884237,
+    "p99_ms": 136.592047,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 9876,
+    "resources_available": true,
+    "rps": 981.2285420017415,
+    "rss_mean_mib": 91.96256510416667,
+    "rss_peak_mib": 91.96875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 99.148363725469,
+    "cpu_peak_percent": 105.30590654494732,
+    "elapsed_seconds": 10.063749443,
+    "load_cpu": {
+      "cores": 0.036,
+      "cpu_seconds": 0.367,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 60.25608,
+    "p99_ms": 140.094944,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 9455,
+    "resources_available": true,
+    "rps": 939.5106717980319,
+    "rss_mean_mib": 100.63094075520833,
+    "rss_peak_mib": 100.9296875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 392.8687356985358,
+    "cpu_peak_percent": 423.2281391555416,
+    "elapsed_seconds": 10.032357204,
+    "load_cpu": {
+      "cores": 0.089,
+      "cpu_seconds": 0.894,
+      "cpus": 8,
+      "utilization": 0.011
+    },
+    "p50_ms": 12.009295,
+    "p99_ms": 77.246066,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 34942,
+    "resources_available": true,
+    "rps": 3482.9302116623476,
+    "rss_mean_mib": 286.1492513020833,
+    "rss_peak_mib": 286.16796875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.023,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "plain-serializer",
+    "cpu_mean_percent": 394.9048189199859,
+    "cpu_peak_percent": 415.17837394123126,
+    "elapsed_seconds": 10.04421662,
+    "load_cpu": {
+      "cores": 0.086,
+      "cpu_seconds": 0.864,
+      "cpus": 8,
+      "utilization": 0.011
+    },
+    "p50_ms": 7.935974,
+    "p99_ms": 103.61449999999999,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 31478,
+    "resources_available": true,
+    "rps": 3133.9427643686163,
+    "rss_mean_mib": 311.7482096354167,
+    "rss_peak_mib": 313.1015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 99.36671883988875,
+    "cpu_peak_percent": 105.78612600508335,
+    "elapsed_seconds": 10.181864785,
+    "load_cpu": {
+      "cores": 0.014,
+      "cpu_seconds": 0.141,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 178.93186599999999,
+    "p99_ms": 232.939175,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 3557,
+    "resources_available": true,
+    "rps": 349.3466152919453,
+    "rss_mean_mib": 110.81712372448979,
+    "rss_peak_mib": 110.84375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.207,
+        "cpus": 4,
+        "utilization": 0.052
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 391.18507851948596,
+    "cpu_peak_percent": 415.3086451275507,
+    "elapsed_seconds": 10.12669141,
+    "load_cpu": {
+      "cores": 0.047,
+      "cpu_seconds": 0.475,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 21.928128,
+    "p99_ms": 149.011293,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 14238,
+    "resources_available": true,
+    "rps": 1405.987348043422,
+    "rss_mean_mib": 332.306640625,
+    "rss_peak_mib": 332.99609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.949,
+        "cpus": 4,
+        "utilization": 0.237
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 99.05440795020968,
+    "cpu_peak_percent": 105.54432646989498,
+    "elapsed_seconds": 10.137396793,
+    "load_cpu": {
+      "cores": 0.017,
+      "cpu_seconds": 0.176,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 136.49472,
+    "p99_ms": 175.442271,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 4679,
+    "resources_available": true,
+    "rps": 461.5583364785433,
+    "rss_mean_mib": 103.13887117346938,
+    "rss_peak_mib": 103.203125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.265,
+        "cpus": 4,
+        "utilization": 0.066
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-list",
+    "cpu_mean_percent": 390.9618382784039,
+    "cpu_peak_percent": 420.8030682337105,
+    "elapsed_seconds": 10.105819861,
+    "load_cpu": {
+      "cores": 0.035,
+      "cpu_seconds": 0.351,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 45.423353999999996,
+    "p99_ms": 160.9632,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 11400,
+    "resources_available": true,
+    "rps": 1128.0628545531918,
+    "rss_mean_mib": 352.4908854166667,
+    "rss_peak_mib": 354.7265625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.733,
+        "cpus": 4,
+        "utilization": 0.183
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 98.48863479943859,
+    "cpu_peak_percent": 105.2510267541963,
+    "elapsed_seconds": 10.113618028,
+    "load_cpu": {
+      "cores": 0.02,
+      "cpu_seconds": 0.202,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 91.638912,
+    "p99_ms": 118.84636499999999,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 6921,
+    "resources_available": true,
+    "rps": 684.3248361604033,
+    "rss_mean_mib": 99.97560586734694,
+    "rss_peak_mib": 100.046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.21,
+        "cpus": 4,
+        "utilization": 0.053
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 390.2835011427107,
+    "cpu_peak_percent": 413.2439791437608,
+    "elapsed_seconds": 10.048242214,
+    "load_cpu": {
+      "cores": 0.057,
+      "cpu_seconds": 0.574,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 26.272225,
+    "p99_ms": 56.70323,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 22329,
+    "resources_available": true,
+    "rps": 2222.179713073545,
+    "rss_mean_mib": 318.6857096354167,
+    "rss_peak_mib": 319.40625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.771,
+        "cpus": 4,
+        "utilization": 0.193
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 97.54434021949662,
+    "cpu_peak_percent": 105.42050986463904,
+    "elapsed_seconds": 10.069088592,
+    "load_cpu": {
+      "cores": 0.025,
+      "cpu_seconds": 0.249,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 70.41197000000001,
+    "p99_ms": 84.594068,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 9049,
+    "resources_available": true,
+    "rps": 898.6910699335319,
+    "rss_mean_mib": 96.25358737244898,
+    "rss_peak_mib": 96.328125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.269,
+        "cpus": 4,
+        "utilization": 0.067
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-detail",
+    "cpu_mean_percent": 392.4449627874724,
+    "cpu_peak_percent": 416.2007034180214,
+    "elapsed_seconds": 10.042655875,
+    "load_cpu": {
+      "cores": 0.071,
+      "cpu_seconds": 0.712,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 18.348436999999997,
+    "p99_ms": 53.563617,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 30427,
+    "resources_available": true,
+    "rps": 3029.7762244093624,
+    "rss_mean_mib": 304.2032877604167,
+    "rss_peak_mib": 304.48046875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.027,
+        "cpus": 4,
+        "utilization": 0.257
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 389.11204805361,
+    "cpu_peak_percent": 411.8928069426376,
+    "elapsed_seconds": 10.344077899,
+    "load_cpu": {
+      "cores": 0.023,
+      "cpu_seconds": 0.239,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 67.97049700000001,
+    "p99_ms": 465.541752,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 4544,
+    "resources_available": true,
+    "rps": 439.28516822551046,
+    "rss_mean_mib": 477.1823182397959,
+    "rss_peak_mib": 480.96875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.435,
+        "cpus": 4,
+        "utilization": 0.109
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 384.4109855881502,
+    "cpu_peak_percent": 415.97933962059403,
+    "elapsed_seconds": 10.269830402,
+    "load_cpu": {
+      "cores": 0.028,
+      "cpu_seconds": 0.294,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 89.52787199999999,
+    "p99_ms": 322.240511,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 5662,
+    "resources_available": true,
+    "rps": 551.3236127928026,
+    "rss_mean_mib": 401.4278539540816,
+    "rss_peak_mib": 402.67578125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.56,
+        "cpus": 4,
+        "utilization": 0.14
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 97.53422762077255,
+    "cpu_peak_percent": 110.02487955405608,
+    "elapsed_seconds": 10.437335061,
+    "load_cpu": {
+      "cores": 0.01,
+      "cpu_seconds": 0.099,
+      "cpus": 8,
+      "utilization": 0.001
+    },
+    "p50_ms": 468.095324,
+    "p99_ms": 541.79346,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 1423,
+    "resources_available": true,
+    "rps": 136.33748381971196,
+    "rss_mean_mib": 145.06694240196077,
+    "rss_peak_mib": 145.84765625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.135,
+        "cpus": 4,
+        "utilization": 0.034
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-nested-list",
+    "cpu_mean_percent": 99.54697184530517,
+    "cpu_peak_percent": 105.3808667807908,
+    "elapsed_seconds": 10.355516881,
+    "load_cpu": {
+      "cores": 0.009,
+      "cpu_seconds": 0.098,
+      "cpus": 8,
+      "utilization": 0.001
+    },
+    "p50_ms": 342.705453,
+    "p99_ms": 403.60513799999995,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 1924,
+    "resources_available": true,
+    "rps": 185.79468529765995,
+    "rss_mean_mib": 120.988984375,
+    "rss_peak_mib": 123.6953125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.173,
+        "cpus": 4,
+        "utilization": 0.043
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 393.6027824679465,
+    "cpu_peak_percent": 413.9926349931729,
+    "elapsed_seconds": 10.01516247,
+    "load_cpu": {
+      "cores": 0.164,
+      "cpu_seconds": 1.655,
+      "cpus": 8,
+      "utilization": 0.021
+    },
+    "p50_ms": 5.796398,
+    "p99_ms": 42.212754,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 93798,
+    "resources_available": true,
+    "rps": 9365.599437949008,
+    "rss_mean_mib": 282.720458984375,
+    "rss_peak_mib": 283.30078125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 97.50670071935946,
+    "cpu_peak_percent": 105.41404371457878,
+    "elapsed_seconds": 10.017477179,
+    "load_cpu": {
+      "cores": 0.076,
+      "cpu_seconds": 0.763,
+      "cpus": 8,
+      "utilization": 0.009
+    },
+    "p50_ms": 13.623159,
+    "p99_ms": 55.364229,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 41839,
+    "resources_available": true,
+    "rps": 4176.6004805789435,
+    "rss_mean_mib": 91.73198341836735,
+    "rss_peak_mib": 91.74609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 97.38022659350897,
+    "cpu_peak_percent": 105.6337437918405,
+    "elapsed_seconds": 10.024181357,
+    "load_cpu": {
+      "cores": 0.059,
+      "cpu_seconds": 0.589,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 19.649334,
+    "p99_ms": 71.072121,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 28539,
+    "resources_available": true,
+    "rps": 2847.015530108191,
+    "rss_mean_mib": 91.13209502551021,
+    "rss_peak_mib": 91.265625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-small",
+    "cpu_mean_percent": 396.00754107062784,
+    "cpu_peak_percent": 419.71714193111796,
+    "elapsed_seconds": 10.012031885,
+    "load_cpu": {
+      "cores": 0.215,
+      "cpu_seconds": 2.163,
+      "cpus": 8,
+      "utilization": 0.027
+    },
+    "p50_ms": 2.824145,
+    "p99_ms": 29.265285,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 132240,
+    "resources_available": true,
+    "rps": 13208.108156159751,
+    "rss_mean_mib": 286.1485188802083,
+    "rss_peak_mib": 286.16015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.027,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 395.8494642693933,
+    "cpu_peak_percent": 419.0692617664509,
+    "elapsed_seconds": 10.018918681,
+    "load_cpu": {
+      "cores": 0.097,
+      "cpu_seconds": 0.979,
+      "cpus": 8,
+      "utilization": 0.012
+    },
+    "p50_ms": 9.456691999999999,
+    "p99_ms": 58.911731,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 42361,
+    "resources_available": true,
+    "rps": 4228.100990612282,
+    "rss_mean_mib": 298.392578125,
+    "rss_peak_mib": 299.3828125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.029,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 97.67574240403269,
+    "cpu_peak_percent": 105.48013659778297,
+    "elapsed_seconds": 10.020422316,
+    "load_cpu": {
+      "cores": 0.064,
+      "cpu_seconds": 0.645,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 15.974055000000002,
+    "p99_ms": 60.551515,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 35743,
+    "resources_available": true,
+    "rps": 3567.015328578293,
+    "rss_mean_mib": 91.8657525510204,
+    "rss_peak_mib": 91.875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 396.1839709575728,
+    "cpu_peak_percent": 418.8769308716974,
+    "elapsed_seconds": 10.009960614,
+    "load_cpu": {
+      "cores": 0.198,
+      "cpu_seconds": 1.996,
+      "cpus": 8,
+      "utilization": 0.025
+    },
+    "p50_ms": 3.9360360000000005,
+    "p99_ms": 33.053181,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 116843,
+    "resources_available": true,
+    "rps": 11672.67330069037,
+    "rss_mean_mib": 286.928955078125,
+    "rss_peak_mib": 286.9609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-wide",
+    "cpu_mean_percent": 99.45210875035835,
+    "cpu_peak_percent": 105.38473911492983,
+    "elapsed_seconds": 10.047423124,
+    "load_cpu": {
+      "cores": 0.037,
+      "cpu_seconds": 0.369,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 45.751180000000005,
+    "p99_ms": 119.619192,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 12243,
+    "resources_available": true,
+    "rps": 1218.5213908982778,
+    "rss_mean_mib": 94.68831380208333,
+    "rss_peak_mib": 94.7734375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 396.1782783950787,
+    "cpu_peak_percent": 415.9956768875307,
+    "elapsed_seconds": 10.089783098,
+    "load_cpu": {
+      "cores": 0.047,
+      "cpu_seconds": 0.479,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 61.945676,
+    "p99_ms": 160.08362400000001,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 9945,
+    "resources_available": true,
+    "rps": 985.6505242388512,
+    "rss_mean_mib": 369.3037923177083,
+    "rss_peak_mib": 373.6328125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.03,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 99.27759433551718,
+    "cpu_peak_percent": 105.40115318083525,
+    "elapsed_seconds": 10.182613333,
+    "load_cpu": {
+      "cores": 0.02,
+      "cpu_seconds": 0.204,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 201.761253,
+    "p99_ms": 300.071469,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 3107,
+    "resources_available": true,
+    "rps": 305.12795668384825,
+    "rss_mean_mib": 113.1788105867347,
+    "rss_peak_mib": 113.40625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 98.64880495977697,
+    "cpu_peak_percent": 105.43027551346627,
+    "elapsed_seconds": 10.047726646,
+    "load_cpu": {
+      "cores": 0.038,
+      "cpu_seconds": 0.384,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 43.963835,
+    "p99_ms": 114.43158700000001,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 13073,
+    "resources_available": true,
+    "rps": 1301.090332229964,
+    "rss_mean_mib": 93.46556122448979,
+    "rss_peak_mib": 93.47265625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "validate-nested",
+    "cpu_mean_percent": 395.78767742309395,
+    "cpu_peak_percent": 413.27743117361456,
+    "elapsed_seconds": 10.0393549,
+    "load_cpu": {
+      "cores": 0.11,
+      "cpu_seconds": 1.112,
+      "cpus": 8,
+      "utilization": 0.014
+    },
+    "p50_ms": 5.694007,
+    "p99_ms": 79.064579,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 42697,
+    "resources_available": true,
+    "rps": 4252.96250857712,
+    "rss_mean_mib": 292.57080078125,
+    "rss_peak_mib": 292.609375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 98.5838882119442,
+    "cpu_peak_percent": 105.46502703572287,
+    "elapsed_seconds": 10.091014854,
+    "load_cpu": {
+      "cores": 0.032,
+      "cpu_seconds": 0.321,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 62.597457999999996,
+    "p99_ms": 105.44461199999999,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 9760,
+    "resources_available": true,
+    "rps": 967.1970699885761,
+    "rss_mean_mib": 103.67833227040816,
+    "rss_peak_mib": 104.0234375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.024,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 97.83777661486906,
+    "cpu_peak_percent": 105.48556088659919,
+    "elapsed_seconds": 10.055396133,
+    "load_cpu": {
+      "cores": 0.033,
+      "cpu_seconds": 0.329,
+      "cpus": 8,
+      "utilization": 0.004
+    },
+    "p50_ms": 50.964649,
+    "p99_ms": 125.97393100000001,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 11158,
+    "resources_available": true,
+    "rps": 1109.6529517501008,
+    "rss_mean_mib": 95.27662627551021,
+    "rss_peak_mib": 95.35546875,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.025,
+        "cpus": 4,
+        "utilization": 0.006
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 395.96927542469615,
+    "cpu_peak_percent": 413.52573176639316,
+    "elapsed_seconds": 10.040395365,
+    "load_cpu": {
+      "cores": 0.087,
+      "cpu_seconds": 0.874,
+      "cpus": 8,
+      "utilization": 0.011
+    },
+    "p50_ms": 8.678115,
+    "p99_ms": 96.705804,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 34017,
+    "resources_available": true,
+    "rps": 3388.013993809496,
+    "rss_mean_mib": 313.50927734375,
+    "rss_peak_mib": 314.3359375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "invalid",
+    "cpu_mean_percent": 395.2339399984612,
+    "cpu_peak_percent": 416.8318085579667,
+    "elapsed_seconds": 10.032982025,
+    "load_cpu": {
+      "cores": 0.09,
+      "cpu_seconds": 0.91,
+      "cpus": 8,
+      "utilization": 0.011
+    },
+    "p50_ms": 13.363185,
+    "p99_ms": 75.835185,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 37138,
+    "resources_available": true,
+    "rps": 3701.5914019839975,
+    "rss_mean_mib": 298.5199381510417,
+    "rss_peak_mib": 298.953125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.028,
+        "cpus": 4,
+        "utilization": 0.007
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 336.72674465405214,
+    "cpu_peak_percent": 406.2612973136071,
+    "elapsed_seconds": 1.6480690839999999,
+    "load_cpu": {
+      "cores": 0.043,
+      "cpu_seconds": 0.073,
+      "cpus": 8,
+      "utilization": 0.005
+    },
+    "p50_ms": 49.896079,
+    "p99_ms": 105.569196,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1213.5413614736553,
+    "rss_mean_mib": 312.26171875,
+    "rss_peak_mib": 315.25390625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.271,
+        "cpus": 4,
+        "utilization": 0.318
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 95.43480069674119,
+    "cpu_peak_percent": 105.39574474039092,
+    "elapsed_seconds": 5.221429821,
+    "load_cpu": {
+      "cores": 0.015,
+      "cpu_seconds": 0.081,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 164.082817,
+    "p99_ms": 200.966712,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 383.03684403766687,
+    "rss_mean_mib": 100.37635216346153,
+    "rss_peak_mib": 100.67578125,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.35,
+        "cpus": 4,
+        "utilization": 0.087
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 362.5400975934696,
+    "cpu_peak_percent": 398.51821460213773,
+    "elapsed_seconds": 1.559795074,
+    "load_cpu": {
+      "cores": 0.046,
+      "cpu_seconds": 0.073,
+      "cpus": 8,
+      "utilization": 0.006
+    },
+    "p50_ms": 49.24779,
+    "p99_ms": 99.86817500000001,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1282.2197180499622,
+    "rss_mean_mib": 310.5732421875,
+    "rss_peak_mib": 311.19140625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.389,
+        "cpus": 4,
+        "utilization": 0.347
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-create",
+    "cpu_mean_percent": 98.60537953487274,
+    "cpu_peak_percent": 105.00656559634226,
+    "elapsed_seconds": 5.121174919,
+    "load_cpu": {
+      "cores": 0.016,
+      "cpu_seconds": 0.084,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 160.62695499999998,
+    "p99_ms": 197.53338300000001,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 390.53538135942745,
+    "rss_mean_mib": 99.15671875,
+    "rss_peak_mib": 99.5859375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.378,
+        "cpus": 4,
+        "utilization": 0.095
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 322.5564887007754,
+    "cpu_peak_percent": 411.69021498530566,
+    "elapsed_seconds": 1.266604093,
+    "load_cpu": {
+      "cores": 0.054,
+      "cpu_seconds": 0.071,
+      "cpus": 8,
+      "utilization": 0.007
+    },
+    "p50_ms": 23.911717999999997,
+    "p99_ms": 106.248419,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1579.0253726899966,
+    "rss_mean_mib": 309.81473214285717,
+    "rss_peak_mib": 309.890625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 1.008,
+        "cpus": 4,
+        "utilization": 0.252
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 344.6235102850432,
+    "cpu_peak_percent": 406.81440942702005,
+    "elapsed_seconds": 1.327900098,
+    "load_cpu": {
+      "cores": 0.062,
+      "cpu_seconds": 0.084,
+      "cpus": 8,
+      "utilization": 0.008
+    },
+    "p50_ms": 27.674449,
+    "p99_ms": 107.539461,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 1506.1373992006438,
+    "rss_mean_mib": 313.1607142857143,
+    "rss_peak_mib": 315.765625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.994,
+        "cpus": 4,
+        "utilization": 0.248
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "workers": 4
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 94.78032097789267,
+    "cpu_peak_percent": 104.9373835974265,
+    "elapsed_seconds": 4.214394661,
+    "load_cpu": {
+      "cores": 0.02,
+      "cpu_seconds": 0.086,
+      "cpus": 8,
+      "utilization": 0.003
+    },
+    "p50_ms": 133.174594,
+    "p99_ms": 162.445381,
+    "profile": "fastdrf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 474.56400287044687,
+    "rss_mean_mib": 97.88076636904762,
+    "rss_peak_mib": 98.34375,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.28,
+        "cpus": 4,
+        "utilization": 0.07
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  },
+  {
+    "case": "db-update",
+    "cpu_mean_percent": 98.3744517288165,
+    "cpu_peak_percent": 104.96619642493152,
+    "elapsed_seconds": 4.57673387,
+    "load_cpu": {
+      "cores": 0.018,
+      "cpu_seconds": 0.085,
+      "cpus": 8,
+      "utilization": 0.002
+    },
+    "p50_ms": 143.736161,
+    "p99_ms": 180.83086400000002,
+    "profile": "drf",
+    "repeat": 2,
+    "requests": 2000,
+    "resources_available": true,
+    "rps": 436.99285490681154,
+    "rss_mean_mib": 100.61594460227273,
+    "rss_peak_mib": 100.91015625,
+    "service_cpu": {
+      "postgres": {
+        "cores": 0.265,
+        "cpus": 4,
+        "utilization": 0.066
+      }
+    },
+    "valid": true,
+    "worker_cpus": [
+      [
+        0
+      ]
+    ],
+    "workers": 1
+  }
+]

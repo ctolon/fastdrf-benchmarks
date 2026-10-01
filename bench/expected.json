@@ -1,0 +1,202 @@
+{
+  "db-create": {
+    "headers": {
+      "allow": "GET, POST, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 298,
+    "sha256": "0d1dea6d78d3ffbd03839be2dc0cd3b1aeed6a8911e5cceb7b9d211400a0abb7",
+    "status": 201
+  },
+  "db-detail": {
+    "headers": {
+      "allow": "GET, PUT, PATCH, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 632,
+    "sha256": "bafeb3364f1be46656d46f54e442ea6cfdcbf967aced9a4f61424cb9c77f3b42",
+    "status": 200
+  },
+  "db-list": {
+    "headers": {
+      "allow": "GET, POST, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 12928,
+    "sha256": "a21bc8b61cc1e034054b91e22137101b938663f9df2b8ab00e0d63d15b903283",
+    "status": 200
+  },
+  "db-nested-list": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 20866,
+    "sha256": "3b66e53af12b291fd971a9cbf871aafb727fcaa6067291f8d70fc3a398797601",
+    "status": 200
+  },
+  "db-update": {
+    "headers": {
+      "allow": "GET, PUT, PATCH, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 605,
+    "sha256": "77826538bedbd0568fa9a02f59b4584000dfef49ca8cbc68676dfded442b5af5",
+    "status": 200
+  },
+  "deep": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 8390,
+    "sha256": "19a89f79133655ae8ecd00049da6f1e320bb20a1d18a053aa820be9ea256f643",
+    "status": 200
+  },
+  "invalid": {
+    "headers": {
+      "allow": "POST, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 645,
+    "sha256": "75cfed99212db1b4258008af4b454339541028eaeb12a7880cd08ea095850138",
+    "status": 400
+  },
+  "list-100": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 20976,
+    "sha256": "babd4d7308c35a00a956ad5421f92559b7e1d3b1b7e99d86bd8f3fb357e323c7",
+    "status": 200
+  },
+  "list-1000": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 210588,
+    "sha256": "ed1eee17910e212cca721fa2cdae95c99df5dcdee385d04bd76f6dc76fe6c08e",
+    "status": 200
+  },
+  "list-10000": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 2116150,
+    "sha256": "478329fec0ab882842aa7f6631927d01be1a56bb7980a83f5d4453fa6420591a",
+    "status": 200
+  },
+  "method-field": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 25877,
+    "sha256": "9932a2a08a7216e2d67c9195153b9bc5a1795460a32797e0e49f84f820b2456c",
+    "status": 200
+  },
+  "nested": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 1113,
+    "sha256": "0365b828ea2cc0885d5881c7ce152c80d4520db95ffb7cadce723520b1b1ba65",
+    "status": 200
+  },
+  "plain-serializer": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 19285,
+    "sha256": "3782235193b06c81a1c2caa64c5ab83625209644f330d19d4b6cca75b0de0885",
+    "status": 200
+  },
+  "small": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 84,
+    "sha256": "8df310d75a3385fe6da0f940794a27a75ed69d38cd75d848562dfb5227dec29e",
+    "status": 200
+  },
+  "text-heavy": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 77712,
+    "sha256": "cc7fffe658636caed499ffcc53a7f9fc63785a9ec151d54537943e403393ddb0",
+    "status": 200
+  },
+  "types": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 28302,
+    "sha256": "2c2893f7ceb8f5bd9b91a1d80095b4508d5ba922413b6a4c193d90a2552f480e",
+    "status": 200
+  },
+  "validate-nested": {
+    "headers": {
+      "allow": "POST, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 22350,
+    "sha256": "c6896e4b52983c21bea02b8f0f855110461220b4f6e4ef3fa8ce91cfe745a9ab",
+    "status": 200
+  },
+  "validate-small": {
+    "headers": {
+      "allow": "POST, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 75,
+    "sha256": "e5b92cfc0436eae3f806d009087606ab005f8e502961cf34e6dcd611d7b24409",
+    "status": 200
+  },
+  "validate-wide": {
+    "headers": {
+      "allow": "POST, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 1304,
+    "sha256": "67ba8c20bfb0adf5830102d3b077ddc3f6fa5ec7a6c8dabe644a27560f5608c7",
+    "status": 200
+  },
+  "wide": {
+    "headers": {
+      "allow": "GET, HEAD, OPTIONS",
+      "content-type": "application/json",
+      "vary": "Accept"
+    },
+    "length": 1310,
+    "sha256": "a302aaa6b4aa0817ad70790ce8b59349987fd5d0360441379e8b75b495cb16c8",
+    "status": 200
+  }
+}

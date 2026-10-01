@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastdrf-benchmarks"
+version = "0.1.0"
+description = "HTTP benchmarks of Django REST framework with its defaults against the same API optimized with django-fastdrf."
+readme = "README.md"
+requires-python = ">=3.14"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [{ name = "Cevat Batuhan Tolon" }]
+keywords = ["django", "django-rest-framework", "fastdrf", "benchmark", "serialization"]
+# The versions under test; requirements.lock pins every package of a run.
+dependencies = [
+  "django>=6.1.1,<6.2",
+  "djangorestframework>=3.18.1,<3.19",
+  "django-fastdrf[msgspec,pydantic]==0.1.0",
+  "gunicorn>=26.2",
+  "psycopg[binary]>=3.3.6",
+  "httpx>=0.28.1,<1",
+  "matplotlib>=3.11.2,<4",
+  "psutil>=7.2.2,<8",
+]
+
+[project.urls]
+Homepage = "https://github.com/ctolon/fastdrf-benchmarks"
+Source = "https://github.com/ctolon/fastdrf-benchmarks"
+Issues = "https://github.com/ctolon/fastdrf-benchmarks/issues"
+django-fastdrf = "https://github.com/ctolon/django-fastdrf"
+
+[dependency-groups]
+dev = ["pytest>=9.1", "pytest-django>=4.14", "ruff>=0.16"]
+
+[project.scripts]
+fastdrf-bench = "bench.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bench"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "DJ", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"bench/api/migrations/*" = ["E", "I"]
+# The in-memory models are never displayed; the null string is the null
+# value the types case renders.
+"bench/api/models.py" = ["DJ001", "DJ008"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "bench.settings"
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+filterwarnings = ["error"]
