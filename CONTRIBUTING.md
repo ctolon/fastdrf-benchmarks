@@ -18,6 +18,18 @@ uv pip install --python .venv/bin/python --no-deps -e .
 uv pip install --python .venv/bin/python --group dev
 ```
 
+To test changes from the sibling source checkout after installing the locked
+environment:
+
+```sh
+uv pip install --python .venv/bin/python --no-deps ../django-fastdrf
+```
+
+The source version must match the benchmark pin. The manifest records its direct
+URL and source digest. Tests reject a stale installed fastdrf version. Syncing
+`requirements.lock` restores the released environment. The profile tests also
+check every compiler/JSON combination and preserve the known orjson error case.
+
 After changing the dependencies in `pyproject.toml`, regenerate
 `requirements.lock` with the command at its top.
 

@@ -87,11 +87,27 @@ else:
         }
     }
 
+
+def choice(name, default, values):
+    value = os.environ.get(name, default)
+    if value not in values:
+        raise ValueError(f"{name} must be one of {', '.join(values)}; got {value!r}")
+    return value
+
+
+# These controls affect only fastdrf's views. The DRF baseline is unchanged.
+BENCH_SERIALIZER_BACKEND = choice(
+    "BENCH_SERIALIZER_BACKEND", "msgspec", ("msgspec", "pydantic", "python")
+)
+BENCH_JSON = choice("BENCH_JSON", "msgspec", ("msgspec", "pydantic", "orjson", "drf"))
+BENCH_DELEGATE_FIELDS = choice("BENCH_DELEGATE_FIELDS", "1", ("0", "1")) == "1"
+
 if PROFILE == "fastdrf":
     FASTDRF = {
-        # Output of fastdrf serializers from a compiled msgspec class; input
-        # that DRF would accept unchanged recognized by a compiled class.
-        "SERIALIZER_BACKEND": "msgspec",
+        # The selected compiler and delegated-field policy. JSON encoding is
+        # selected separately on the views.
+        "SERIALIZER_BACKEND": BENCH_SERIALIZER_BACKEND,
+        "DELEGATE_FIELDS": BENCH_DELEGATE_FIELDS,
         # Only output proven equal to DRF's is compiled; everything else,
         # including every serializer the compiler declines, is DRF's.
         "SERIALIZER_BACKEND_PARITY": "strict",

@@ -57,3 +57,28 @@ def test_server_answers_the_expected_responses(profile, workers, tmp_path):
             if case.writes:
                 seed()
             verify.check_http(client, case, expected[case.name])
+
+
+@pytest.mark.parametrize("transport", ["pydantic", "orjson"])
+def test_alternative_json_transport_on_gunicorn(transport, monkeypatch, tmp_path):
+    monkeypatch.setenv("BENCH_JSON", transport)
+    expected = verify.load_expected()
+    with (
+        server(
+            "fastdrf",
+            host="127.0.0.1",
+            port=PORT,
+            workers=1,
+            threads=4,
+            log=tmp_path / "server.log",
+        ),
+        httpx.Client(base_url=f"http://127.0.0.1:{PORT}", trust_env=False) as client,
+    ):
+        for case in CASES.values():
+            if transport == "orjson" and case.name == "invalid":
+                # Rejection is covered in test_profiles; a server error must
+                # not be turned into a passing parity measurement here.
+                continue
+            if case.uses_database:
+                seed()
+            verify.check_http(client, case, expected[case.name])

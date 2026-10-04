@@ -5,9 +5,9 @@ Every view answers what its DRF pair answers, byte for byte; the tests and
 the runner check it for every case.
 """
 
+from django.conf import settings
+from django.utils.module_loading import import_string
 from fastdrf.mixins import CreateModelMixin, UpdateModelMixin
-from fastdrf.msgspec.parsers import MsgspecJSONParser
-from fastdrf.msgspec.renderers import MsgspecJSONRenderer
 from fastdrf.response import DataResponse
 from fastdrf.views import DispatchOptimizationMixin, QueryOptimizationMixin
 from rest_framework import generics
@@ -18,6 +18,26 @@ from bench.api import models
 from bench.api.fast import serializers
 from bench.api.pagination import ArticlePagination
 
+JSON_TRANSPORTS = {
+    "msgspec": (
+        "fastdrf.msgspec.parsers.MsgspecJSONParser",
+        "fastdrf.msgspec.renderers.MsgspecJSONRenderer",
+    ),
+    "pydantic": (
+        "fastdrf.pydantic.parsers.PydanticJSONParser",
+        "fastdrf.pydantic.renderers.PydanticJSONRenderer",
+    ),
+    "orjson": (
+        "fastdrf.orjson.parsers.ORJSONParser",
+        "fastdrf.orjson.renderers.ORJSONRenderer",
+    ),
+    "drf": (
+        "rest_framework.parsers.JSONParser",
+        "rest_framework.renderers.JSONRenderer",
+    ),
+}
+_json_parser, _json_renderer = map(import_string, JSON_TRANSPORTS[settings.BENCH_JSON])
+
 
 class Optimized(DispatchOptimizationMixin):
     """
@@ -26,12 +46,10 @@ class Optimized(DispatchOptimizationMixin):
     answers with a Response that releases the request when it is closed.
     """
 
-    # DRF's default classes with the JSON ones replaced by msgspec's
-    # encoder and decoder. Every case's data renders to DRF's bytes with it
-    # (docs/cases.md#renderer). The browsable API stays, so the Vary header
-    # is DRF's too.
-    renderer_classes = [MsgspecJSONRenderer, BrowsableAPIRenderer]
-    parser_classes = [MsgspecJSONParser, FormParser, MultiPartParser]
+    # Keep the browsable API and form/upload parsers, including DRF's Vary
+    # header. Every selected transport must pass the same byte comparison.
+    renderer_classes = [_json_renderer, BrowsableAPIRenderer]
+    parser_classes = [_json_parser, FormParser, MultiPartParser]
 
 
 # Output of in-memory objects.

@@ -118,6 +118,7 @@ def profile_settings() -> dict:
         "fastdrf": {
             "REST_FRAMEWORK": "not set (DRF's defaults)",
             "FASTDRF": settings.FASTDRF,
+            "BENCH_JSON": settings.BENCH_JSON,
             "renderer_classes": dotted(Optimized.renderer_classes),
             "parser_classes": dotted(Optimized.parser_classes),
         },

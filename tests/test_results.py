@@ -94,3 +94,15 @@ def test_report(tmp_path):
     assert (tmp_path / "graphs" / "speedup-4-workers.png").is_file()
     assert (tmp_path / "graphs" / "db-list.png").is_file()
     assert (tmp_path / "summary.csv").read_text().count("\n") == 9
+
+
+def test_report_identifies_delegated_output(tmp_path):
+    write_run(tmp_path)
+    path = tmp_path / "manifest.json"
+    manifest = json.loads(path.read_text())
+    manifest["cases"]["small"]["fastdrf"]["delegated"] = ["label"]
+    path.write_text(json.dumps(manifest))
+    write_report(tmp_path)
+    report = (tmp_path / "REPORT.md").read_text()
+    assert "delegated: label" in report
+    assert "delegated fields: label" in report

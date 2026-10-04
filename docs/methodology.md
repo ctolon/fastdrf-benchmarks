@@ -18,14 +18,15 @@ as a careful DRF project would, so that neither profile runs more queries.
 
 ### fastdrf
 
-The same API with django-fastdrf 0.1.0's optimizations. Each was kept only
+The same API with django-fastdrf 0.5.0's optimizations. Each was kept only
 if every case still answers DRF's exact bytes; the tests check it.
 
 | Setting or class | Where | Why |
 | --- | --- | --- |
-| `SERIALIZER_BACKEND = "msgspec"` | `FASTDRF` | Output of every eligible serializer from a compiled msgspec class, and input recognition. `python` would compile output only; `pydantic` is the alternative backend, not measured here. |
+| `SERIALIZER_BACKEND = "msgspec"` | `FASTDRF` | Output of every eligible serializer from a compiled msgspec class, and input recognition. `BENCH_SERIALIZER_BACKEND` also selects `pydantic` or `python`; Python compiles output only. |
 | `SERIALIZER_BACKEND_PARITY = "strict"` | `FASTDRF` | Only output proven equal to DRF's is compiled. `fast` parity changes decimal formatting and other values, so it cannot meet the byte-identity rule. |
-| `SERIALIZER_BACKEND_FALLBACK = "drf"` | `FASTDRF` | `method-field` and `plain-serializer` are left to DRF by design and must still answer. The tests switch it to `error` to prove that every other case is compiled. |
+| `SERIALIZER_BACKEND_FALLBACK = "drf"` | `FASTDRF` | `plain-serializer` is left to DRF in strict parity. The tests switch this to `error` to prove the other output cases compile. |
+| `DELEGATE_FIELDS = True` | `FASTDRF` | Compile the model fields of `method-field`, then run its original `label` method. `BENCH_DELEGATE_FIELDS=0` selects the earlier whole-serializer fallback. |
 | `CACHE_SERIALIZER_FIELDS = True`, `FIELD_COPY_MODE = "compiled"` | `FASTDRF` | Fields built once per serializer class and copied with a generated plan instead of DRF's per-instance construction and `deepcopy`. |
 | `BATCH_RELATED_LOOKUPS = False` | `FASTDRF` | Off on purpose. It would look up the three `tag_ids` of `db-create` in one query instead of three, and the benchmark compares the two profiles at the same SQL. |
 | `FETCH_MODE = "peers"` | `FASTDRF` | fastdrf's recommended safety net for lazily loaded relations. No case loads one, and the tests show the SQL is unchanged. |
@@ -36,6 +37,18 @@ if every case still answers DRF's exact bytes; the tests check it.
 | `fastdrf.mixins.CreateModelMixin`, `UpdateModelMixin` | `db-create`, `db-update` | The saved object is produced with the compiled encoder of the serializer's class. |
 | `MsgspecJSONRenderer`, `MsgspecJSONParser` | views | msgspec's encoder and decoder, with DRF's form parsers and the browsable API kept, so the `Vary` header is DRF's too. Its documented differences from DRF's encoder concern values no case contains ([cases](cases.md#renderer)); fastdrf's kept-encoder `JSONRenderer` would be the choice for data that has them. |
 
+`BENCH_JSON` can select pydantic-core, orjson, or DRF's default JSON classes
+instead of msgspec, independently of the compiler. Form/upload parsers and the
+browsable renderer remain present. This changes only fastdrf's profile.
+All configurations retain byte equality and SQL-count checks. In fastdrf 0.5.0,
+orjson cannot render the integer keys in the `invalid` case's indexed field
+errors; that combination fails and must not contribute a speed-up number.
+No fallback renderer is added to conceal the failure.
+
+The previous fastdrf 0.1.0 measurement is preserved in the
+[archive](../archive/2026-10-01-fastdrf-0.1.0-gunicorn/REPORT.md).
+Each measurement writes a new directory with its own manifest.
+
 `fastdrf` is in `INSTALLED_APPS` of this profile only, for its system checks.
 Not used: schema serializers (`SchemaViewMixin`, msgspec `Struct` or pydantic
 models as serializers), whose output and validation rules are their own and
@@ -44,7 +57,8 @@ codecs.
 
 `manifest.json` records both profiles' settings, and for each case what
 fastdrf does: compiled output, recognized input, or DRF with fastdrf's
-reason.
+reason, plus the delegated fields. The JSON transport is recorded by its
+selected name and fully qualified parser/renderer classes.
 
 ## Validity
 
@@ -114,7 +128,7 @@ server starts; they are not a confidence interval.
 
 ## Server
 
-Gunicorn 26 with the `gthread` worker, 1 or 4 workers, 8 threads per worker
+Gunicorn 26 with one `gthread` worker and 8 threads
 (`--threads`), keep-alive 5 seconds, so oha's connections stay open. Each
 worker serves its requests on one CPU, so the threads interleave under the
 GIL: they overlap the database round trips of the database cases, and add
@@ -130,21 +144,22 @@ Django runs without middleware, with `DEBUG = False`, `USE_TZ = True` and
 ## CPU layout
 
 The server, the load generator and PostgreSQL do not share CPUs, and a server
-of N workers runs on exactly N CPUs, one per worker. The default layout is
+uses one logical CPU. The default layout is
 for a host with 8 performance cores (SMT, CPUs 0–15) and 12 efficiency cores
 (CPUs 16–27), such as an Intel Core i7-14700F:
 
 | CPUs | Used by |
 | --- | --- |
-| 0, 2, 4, 6 | The server: worker i on the i-th CPU (`SERVER_CPUS`) |
-| 1, 3, 5, 7 | Idle: the SMT siblings of the server CPUs |
+| 0 | The server (`SERVER_CPUS`) |
+| 1 | Idle: the SMT sibling of the server CPU |
+| 2–7, 20–27 | Not assigned to the benchmark |
 | 8–15 | oha, one thread per CPU (`LOAD_CPUS`) |
 | 16–19 | PostgreSQL (`BENCH_PG_CPUS`) |
 
 Gunicorn's master is started with `taskset` on the server CPUs, and each
 worker pins itself to one of them after the fork (`bench/gunicorn_config.py`).
-On another host, give the server one physical core per worker for the largest
-worker count, the load generator about as many, and PostgreSQL the rest. The
+On another host, give the server one logical CPU with its SMT sibling idle,
+and separate physical cores to the load generator and PostgreSQL. The
 manifest records the layout of every run. Processes outside the benchmark are
 not confined; run on a quiet host.
 

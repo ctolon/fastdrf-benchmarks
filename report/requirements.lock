@@ -1,0 +1,84 @@
+# Exact versions of a benchmark environment (CPython 3.14, GIL build).
+# Regenerate after changing pyproject.toml:
+#   uv pip compile pyproject.toml --python 3.14 --no-header -o requirements.lock
+annotated-types==0.8.0
+    # via pydantic
+anyio==4.15.1
+    # via httpx
+asgiref==3.12.1
+    # via django
+certifi==2026.7.22
+    # via
+    #   httpcore
+    #   httpx
+contourpy==1.4.0
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
+django==6.1.1
+    # via
+    #   fastdrf-benchmarks (pyproject.toml)
+    #   django-fastdrf
+    #   djangorestframework
+django-fastdrf==0.5.0
+    # via fastdrf-benchmarks (pyproject.toml)
+djangorestframework==3.18.1
+    # via
+    #   fastdrf-benchmarks (pyproject.toml)
+    #   django-fastdrf
+fonttools==4.66.1
+    # via matplotlib
+gunicorn==26.2.0
+    # via fastdrf-benchmarks (pyproject.toml)
+h11==0.16.0
+    # via httpcore
+httpcore==1.0.9
+    # via httpx
+httpx==0.28.1
+    # via fastdrf-benchmarks (pyproject.toml)
+idna==3.20
+    # via
+    #   anyio
+    #   httpx
+kiwisolver==1.5.1
+    # via matplotlib
+matplotlib==3.11.2
+    # via fastdrf-benchmarks (pyproject.toml)
+msgspec==0.22.0
+    # via django-fastdrf
+numpy==2.5.3
+    # via
+    #   contourpy
+    #   matplotlib
+orjson==3.12.0
+    # via django-fastdrf
+packaging==26.3
+    # via matplotlib
+pillow==12.3.0
+    # via matplotlib
+psutil==7.2.2
+    # via fastdrf-benchmarks (pyproject.toml)
+psycopg==3.3.6
+    # via fastdrf-benchmarks (pyproject.toml)
+psycopg-binary==3.3.6
+    # via psycopg
+pydantic==2.13.5
+    # via django-fastdrf
+pydantic-core==2.46.5
+    # via pydantic
+pyparsing==3.3.3
+    # via matplotlib
+python-dateutil==2.9.0.post0
+    # via matplotlib
+six==1.17.0
+    # via python-dateutil
+sqlparse==0.6.0
+    # via django
+typing-extensions==4.16.0
+    # via
+    #   anyio
+    #   pydantic
+    #   pydantic-core
+    #   typing-inspection
+typing-inspection==0.4.4
+    # via pydantic

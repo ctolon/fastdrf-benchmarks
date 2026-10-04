@@ -13,7 +13,7 @@ from bench.cases import CASES, INPUT, OUTPUT
 URLCONFS = {"drf": "bench.api.drf.urls", "fastdrf": "bench.api.fast.urls"}
 EXPECTED = verify.load_expected()
 # The cases whose output fastdrf leaves to DRF, by design.
-OUTPUT_ON_DRF = {"method-field", "plain-serializer"}
+OUTPUT_ON_DRF = {"plain-serializer"}
 
 
 def run(settings, profile, case):
@@ -104,3 +104,21 @@ def test_inspection_reports_each_case():
             assert (path["output"] == "compiled") == (name not in OUTPUT_ON_DRF), path
         if case.kind == INPUT and case.status == 200:
             assert path["input"] == "recognized", path
+
+
+@pytest.mark.django_db
+def test_method_field_can_still_be_measured_without_delegation(settings):
+    settings.FASTDRF = {**settings.FASTDRF, "DELEGATE_FIELDS": False}
+    result = run(settings, "fastdrf", CASES["method-field"])
+    verify.compare(CASES["method-field"], result.fingerprint, EXPECTED["method-field"])
+    from bench.inspection import fastdrf_path
+
+    path = fastdrf_path(CASES["method-field"])
+    assert path["output"].startswith("DRF:")
+    assert path["delegated"] == []
+
+
+def test_inspection_records_delegated_fields():
+    from bench.inspection import fastdrf_path
+
+    assert fastdrf_path(CASES["method-field"])["delegated"] == ["label"]

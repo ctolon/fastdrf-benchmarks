@@ -66,7 +66,7 @@ def parser() -> argparse.ArgumentParser:
     )
     run.add_argument("--cases", nargs="+", choices=CASES, default=list(CASES))
     run.add_argument("--profiles", nargs="+", choices=PROFILES, default=list(PROFILES))
-    run.add_argument("--workers", type=positive, nargs="+", default=[1, 4])
+    run.add_argument("--workers", type=positive, choices=[1], nargs="+", default=[1])
     run.add_argument(
         "--threads", type=positive, default=8, help="Gunicorn threads per worker"
     )

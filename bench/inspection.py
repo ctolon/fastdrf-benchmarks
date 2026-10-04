@@ -19,13 +19,15 @@ def describe(eligibility) -> str:
     return "compiled" if eligibility.eligible else f"DRF: {eligibility.reason}"
 
 
-def fastdrf_path(case: Case) -> dict[str, str]:
+def fastdrf_path(case: Case) -> dict[str, object]:
     """``output`` and ``input``: compiled or recognized by fastdrf, or DRF's and why."""
     backend = fastdrf_settings.SERIALIZER_BACKEND
     cls = serializer_class(case)
-    result = {"serializer": cls.__name__}
+    result: dict[str, object] = {"serializer": cls.__name__}
     if case.kind != INPUT:
-        result["output"] = describe(report_details(cls(), backend=backend))
+        eligibility = report_details(cls(), backend=backend)
+        result["output"] = describe(eligibility)
+        result["delegated"] = list(eligibility.delegated)
     if case.kind in (INPUT, WRITE):
         if case.status >= 400:
             result["input"] = "DRF: the recognizer does not accept invalid input"

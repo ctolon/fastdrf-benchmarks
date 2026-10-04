@@ -128,7 +128,7 @@ CASES = {
             "GET",
             "/out/method-field/",
             200,
-            "The list-100 objects with a SerializerMethodField, which fastdrf leaves to DRF",
+            "The list-100 objects with a SerializerMethodField, delegated inside compiled output when enabled",
         ),
         Case(
             "plain-serializer",

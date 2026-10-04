@@ -1,6 +1,6 @@
-# Benchmark report
+# Benchmark report: 2026-10-03-fastdrf-0.5.0-gthread-1w
 
-State: complete. 20 cases, profiles drf and fastdrf, 1, 4 worker(s), 2 server start(s) per group: 80 of 80 groups complete.
+State: complete. 20 cases, profiles drf and fastdrf, 1 worker(s), 2 server start(s) per group: 40 of 40 groups complete.
 
 ## Reading this report
 
@@ -14,30 +14,28 @@ State: complete. 20 cases, profiles drf and fastdrf, 1, 4 worker(s), 2 server st
 
 ![Speed-up, 1 worker(s)](report/graphs/speedup-1-worker.png)
 
-![Speed-up, 4 worker(s)](report/graphs/speedup-4-workers.png)
-
-| Case | Kind | 1w DRF req/s | 1w fastdrf req/s | 1w speed-up | 4w DRF req/s | 4w fastdrf req/s | 4w speed-up | fastdrf |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [small](#small) | output | 2,911 | 4,436 | 1.52× | 9,683 | 13,804 | 1.43× | output compiled |
-| [wide](#wide) | output | 1,093 | 3,673 | 3.36× | 3,733 | 11,905 | 3.19× | output compiled |
-| [list-100](#list-100) | output | 726 | 1,858 | 2.56× | 2,454 | 6,355 | 2.59× | output compiled |
-| [list-1000](#list-1000) | output | 108 | 362 | 3.34× | 358 | 1,179 | 3.29× | output compiled |
-| [list-10000](#list-10000) | output | 11 | 39 | 3.45× | 36 | 121 | 3.41× | output compiled |
-| [nested](#nested) | output | 1,517 | 3,294 | 2.17× | 5,141 | 10,607 | 2.06× | output compiled |
-| [deep](#deep) | output | 789 | 2,240 | 2.84× | 2,643 | 7,376 | 2.79× | output compiled |
-| [types](#types) | output | 477 | 1,353 | 2.84× | 1,599 | 4,527 | 2.83× | output compiled |
-| [text-heavy](#text-heavy) | output | 1,517 | 1,932 | 1.27× | 4,888 | 6,564 | 1.34× | output compiled |
-| [method-field](#method-field) | output | 679 | 772 | 1.14× | 2,288 | 2,515 | 1.10× | output DRF |
-| [plain-serializer](#plain-serializer) | output | 964 | 1,022 | 1.06× | 3,213 | 3,508 | 1.09× | output DRF |
-| [db-list](#db-list) | database | 332 | 464 | 1.40× | 1,100 | 1,449 | 1.32× | output compiled |
-| [db-detail](#db-detail) | database | 665 | 896 | 1.35× | 2,171 | 2,965 | 1.37× | output compiled |
-| [db-nested-list](#db-nested-list) | database | 127 | 177 | 1.39× | 413 | 528 | 1.28× | output compiled |
-| [validate-small](#validate-small) | input | 2,802 | 4,137 | 1.48× | 9,340 | 13,002 | 1.39× | input compiled |
-| [validate-wide](#validate-wide) | input | 1,214 | 3,469 | 2.86× | 4,140 | 11,185 | 2.70× | input compiled |
-| [validate-nested](#validate-nested) | input | 304 | 1,274 | 4.19× | 983 | 4,158 | 4.23× | input compiled |
-| [invalid](#invalid) | input | 966 | 1,114 | 1.15× | 3,396 | 3,558 | 1.05× | input DRF |
-| [db-create](#db-create) | write | 382 | 397 | 1.04× | 1,202 | 1,274 | 1.06× | output compiled, input DRF |
-| [db-update](#db-update) | write | 443 | 491 | 1.11× | 1,466 | 1,572 | 1.07× | output compiled, input DRF |
+| Case | Kind | 1w DRF req/s | 1w fastdrf req/s | 1w speed-up | fastdrf |
+| --- | --- | ---: | ---: | ---: | --- |
+| [small](#small) | output | 2,752 | 4,183 | 1.52× | output compiled |
+| [wide](#wide) | output | 1,028 | 3,614 | 3.52× | output compiled |
+| [list-100](#list-100) | output | 702 | 1,802 | 2.57× | output compiled |
+| [list-1000](#list-1000) | output | 98 | 374 | 3.81× | output compiled |
+| [list-10000](#list-10000) | output | 11 | 37 | 3.23× | output compiled |
+| [nested](#nested) | output | 1,536 | 3,375 | 2.20× | output compiled |
+| [deep](#deep) | output | 775 | 2,285 | 2.95× | output compiled |
+| [types](#types) | output | 480 | 1,426 | 2.97× | output compiled |
+| [text-heavy](#text-heavy) | output | 1,495 | 2,131 | 1.43× | output compiled |
+| [method-field](#method-field) | output | 664 | 1,346 | 2.03× | output compiled, delegated: label |
+| [plain-serializer](#plain-serializer) | output | 956 | 1,039 | 1.09× | output DRF |
+| [db-list](#db-list) | database | 344 | 466 | 1.35× | output compiled |
+| [db-detail](#db-detail) | database | 672 | 909 | 1.35× | output compiled |
+| [db-nested-list](#db-nested-list) | database | 132 | 181 | 1.38× | output compiled |
+| [validate-small](#validate-small) | input | 2,804 | 4,125 | 1.47× | input compiled |
+| [validate-wide](#validate-wide) | input | 1,248 | 3,468 | 2.78× | input compiled |
+| [validate-nested](#validate-nested) | input | 294 | 1,516 | 5.16× | input compiled |
+| [invalid](#invalid) | input | 969 | 1,067 | 1.10× | input DRF |
+| [db-create](#db-create) | write | 363 | 382 | 1.05× | output compiled, input DRF |
+| [db-update](#db-update) | write | 449 | 487 | 1.08× | output compiled, input DRF |
 
 ## Headroom
 
@@ -59,10 +57,8 @@ fastdrf: serializer `SmallSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 2,911 | ±0.2% | 19.26 | 71.12 | 98 | 1% | 1% |
-| fastdrf | 1 | 4,436 | ±2.0% | 12.86 | 52.32 | 98 | 1% | 1% |
-| drf | 4 | 9,683 | ±4.2% | 4.16 | 41.05 | 394 | 1% | 2% |
-| fastdrf | 4 | 13,804 | ±1.1% | 2.28 | 31.20 | 396 | 1% | 3% |
+| drf | 1 | 2,752 | ±5.4% | 20.49 | 74.63 | 98 | 1% | 1% |
+| fastdrf | 1 | 4,183 | ±4.8% | 13.69 | 54.18 | 98 | 1% | 1% |
 
 #### wide
 
@@ -74,10 +70,8 @@ fastdrf: serializer `WideSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 1,093 | ±2.1% | 50.61 | 130.57 | 100 | 1% | 0% |
-| fastdrf | 1 | 3,673 | ±0.2% | 15.45 | 60.02 | 98 | 1% | 1% |
-| drf | 4 | 3,733 | ±0.2% | 11.25 | 74.08 | 395 | 1% | 1% |
-| fastdrf | 4 | 11,905 | ±0.4% | 3.28 | 32.00 | 395 | 1% | 2% |
+| drf | 1 | 1,028 | ±5.9% | 53.70 | 138.02 | 99 | 1% | 0% |
+| fastdrf | 1 | 3,614 | ±1.3% | 15.73 | 61.01 | 99 | 1% | 1% |
 
 #### list-100
 
@@ -89,10 +83,8 @@ fastdrf: serializer `ItemSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 726 | ±1.9% | 79.08 | 160.73 | 98 | 1% | 0% |
-| fastdrf | 1 | 1,858 | ±3.5% | 30.66 | 92.16 | 98 | 1% | 1% |
-| drf | 4 | 2,454 | ±0.4% | 16.78 | 105.41 | 394 | 1% | 1% |
-| fastdrf | 4 | 6,355 | ±0.0% | 4.77 | 50.87 | 396 | 1% | 2% |
+| drf | 1 | 702 | ±1.6% | 82.29 | 164.30 | 98 | 1% | 0% |
+| fastdrf | 1 | 1,802 | ±1.0% | 31.80 | 94.85 | 99 | 1% | 1% |
 
 #### list-1000
 
@@ -104,10 +96,8 @@ fastdrf: serializer `ItemSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 108 | ±2.6% | 576.82 | 780.36 | 98 | 1% | 0% |
-| fastdrf | 1 | 362 | ±2.1% | 168.81 | 257.53 | 99 | 1% | 0% |
-| drf | 4 | 358 | ±0.4% | 110.92 | 545.45 | 388 | 1% | 0% |
-| fastdrf | 4 | 1,179 | ±2.6% | 32.28 | 192.24 | 394 | 1% | 1% |
+| drf | 1 | 98 | ±0.2% | 639.30 | 852.20 | 98 | 1% | 0% |
+| fastdrf | 1 | 374 | ±2.3% | 162.60 | 253.23 | 99 | 1% | 0% |
 
 #### list-10000
 
@@ -119,10 +109,8 @@ fastdrf: serializer `ItemSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 11 | ±0.4% | 5,413.82 | 6,380.86 | 100 | 1% | 0% |
-| fastdrf | 1 | 39 | ±0.3% | 1,583.68 | 1,923.67 | 99 | 1% | 0% |
-| drf | 4 | 36 | ±6.3% | 1,229.42 | 3,957.37 | 348 | 1% | 0% |
-| fastdrf | 4 | 121 | ±1.1% | 343.00 | 1,401.41 | 375 | 1% | 0% |
+| drf | 1 | 11 | ±0.8% | 5,396.00 | 6,234.87 | 99 | 1% | 0% |
+| fastdrf | 1 | 37 | ±2.7% | 1,706.14 | 2,097.72 | 99 | 1% | 0% |
 
 #### nested
 
@@ -134,10 +122,8 @@ fastdrf: serializer `OrderSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 1,517 | ±2.3% | 37.02 | 106.46 | 99 | 1% | 0% |
-| fastdrf | 1 | 3,294 | ±0.6% | 17.23 | 64.71 | 99 | 1% | 1% |
-| drf | 4 | 5,141 | ±0.0% | 6.97 | 62.13 | 396 | 1% | 1% |
-| fastdrf | 4 | 10,607 | ±0.3% | 3.96 | 37.61 | 394 | 1% | 2% |
+| drf | 1 | 1,536 | ±0.4% | 36.49 | 105.91 | 98 | 1% | 0% |
+| fastdrf | 1 | 3,375 | ±0.7% | 16.85 | 64.24 | 98 | 1% | 1% |
 
 #### deep
 
@@ -149,10 +135,8 @@ fastdrf: serializer `TreeSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 789 | ±0.1% | 71.29 | 155.31 | 98 | 1% | 0% |
-| fastdrf | 1 | 2,240 | ±2.3% | 25.47 | 83.31 | 99 | 1% | 1% |
-| drf | 4 | 2,643 | ±0.1% | 21.52 | 100.56 | 397 | 1% | 1% |
-| fastdrf | 4 | 7,376 | ±0.4% | 7.41 | 50.51 | 395 | 1% | 2% |
+| drf | 1 | 775 | ±1.2% | 72.66 | 155.45 | 98 | 1% | 0% |
+| fastdrf | 1 | 2,285 | ±1.1% | 25.05 | 64.86 | 98 | 1% | 1% |
 
 #### types
 
@@ -164,10 +148,8 @@ fastdrf: serializer `TypedSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 477 | ±0.3% | 124.50 | 210.93 | 99 | 1% | 0% |
-| fastdrf | 1 | 1,353 | ±1.2% | 42.29 | 109.85 | 99 | 1% | 0% |
-| drf | 4 | 1,599 | ±0.4% | 19.29 | 159.86 | 391 | 1% | 1% |
-| fastdrf | 4 | 4,527 | ±1.8% | 10.46 | 65.31 | 396 | 1% | 1% |
+| drf | 1 | 480 | ±0.0% | 123.63 | 210.75 | 99 | 1% | 0% |
+| fastdrf | 1 | 1,426 | ±0.5% | 39.93 | 108.44 | 100 | 1% | 0% |
 
 #### text-heavy
 
@@ -179,25 +161,21 @@ fastdrf: serializer `DocumentSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 1,517 | ±0.3% | 37.14 | 104.29 | 98 | 1% | 1% |
-| fastdrf | 1 | 1,932 | ±0.5% | 29.47 | 91.21 | 98 | 1% | 1% |
-| drf | 4 | 4,888 | ±2.5% | 7.93 | 67.14 | 393 | 1% | 2% |
-| fastdrf | 4 | 6,564 | ±0.3% | 4.93 | 48.80 | 396 | 1% | 2% |
+| drf | 1 | 1,495 | ±0.2% | 37.83 | 106.19 | 98 | 1% | 1% |
+| fastdrf | 1 | 2,131 | ±1.2% | 26.71 | 84.51 | 99 | 1% | 1% |
 
 #### method-field
 
-The list-100 objects with a SerializerMethodField, which fastdrf leaves to DRF. `GET /out/method-field/`, 25,877 response bytes.
+The list-100 objects with a SerializerMethodField, delegated inside compiled output when enabled. `GET /out/method-field/`, 25,877 response bytes.
 
-fastdrf: serializer `LabelledItemSerializer`; output DRF: LabelledItemSerializer.label has source='*'.
+fastdrf: serializer `LabelledItemSerializer`; output compiled; delegated fields: label.
 
 ![method-field](report/graphs/method-field.png)
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 679 | ±1.1% | 85.10 | 168.35 | 99 | 1% | 0% |
-| fastdrf | 1 | 772 | ±1.2% | 74.48 | 152.58 | 98 | 1% | 0% |
-| drf | 4 | 2,288 | ±0.5% | 19.82 | 110.55 | 396 | 1% | 1% |
-| fastdrf | 4 | 2,515 | ±0.7% | 11.81 | 102.79 | 395 | 1% | 1% |
+| drf | 1 | 664 | ±3.0% | 87.36 | 170.33 | 99 | 1% | 0% |
+| fastdrf | 1 | 1,346 | ±3.7% | 42.67 | 110.50 | 99 | 1% | 0% |
 
 #### plain-serializer
 
@@ -209,10 +187,8 @@ fastdrf: serializer `PlainItemSerializer`; output DRF: PlainItemSerializer is no
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 964 | ±2.6% | 58.76 | 138.03 | 99 | 1% | 0% |
-| fastdrf | 1 | 1,022 | ±4.0% | 55.83 | 131.90 | 99 | 1% | 0% |
-| drf | 4 | 3,213 | ±2.5% | 7.27 | 102.47 | 396 | 1% | 1% |
-| fastdrf | 4 | 3,508 | ±0.7% | 13.55 | 72.99 | 394 | 1% | 1% |
+| drf | 1 | 956 | ±1.6% | 59.67 | 139.66 | 98 | 1% | 0% |
+| fastdrf | 1 | 1,039 | ±3.0% | 55.55 | 130.05 | 98 | 1% | 0% |
 
 ### Output from PostgreSQL
 
@@ -226,10 +202,8 @@ fastdrf: serializer `ArticleSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 332 | ±5.1% | 188.63 | 244.16 | 99 | 5% | 0% |
-| fastdrf | 1 | 464 | ±0.6% | 135.47 | 170.43 | 99 | 7% | 0% |
-| drf | 4 | 1,100 | ±2.6% | 45.28 | 154.36 | 389 | 19% | 0% |
-| fastdrf | 4 | 1,449 | ±2.9% | 33.85 | 118.21 | 393 | 25% | 1% |
+| drf | 1 | 344 | ±0.3% | 181.14 | 229.28 | 99 | 6% | 0% |
+| fastdrf | 1 | 466 | ±0.6% | 134.64 | 170.36 | 99 | 7% | 0% |
 
 #### db-detail
 
@@ -241,10 +215,8 @@ fastdrf: serializer `ArticleSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 665 | ±3.0% | 94.17 | 127.27 | 99 | 5% | 0% |
-| fastdrf | 1 | 896 | ±0.4% | 70.41 | 90.09 | 98 | 7% | 0% |
-| drf | 4 | 2,171 | ±2.4% | 32.82 | 65.79 | 385 | 19% | 1% |
-| fastdrf | 4 | 2,965 | ±2.2% | 17.60 | 53.19 | 391 | 26% | 1% |
+| drf | 1 | 672 | ±1.3% | 93.13 | 121.31 | 98 | 5% | 0% |
+| fastdrf | 1 | 909 | ±1.3% | 69.49 | 85.26 | 99 | 7% | 0% |
 
 #### db-nested-list
 
@@ -256,10 +228,8 @@ fastdrf: serializer `AuthorWithArticlesSerializer`; output compiled.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 127 | ±7.5% | 504.76 | 613.49 | 98 | 3% | 0% |
-| fastdrf | 1 | 177 | ±5.1% | 355.85 | 446.48 | 100 | 4% | 0% |
-| drf | 4 | 413 | ±6.3% | 78.51 | 492.86 | 389 | 11% | 0% |
-| fastdrf | 4 | 528 | ±4.4% | 91.67 | 322.25 | 387 | 14% | 0% |
+| drf | 1 | 132 | ±0.9% | 485.32 | 556.95 | 99 | 3% | 0% |
+| fastdrf | 1 | 181 | ±3.1% | 348.66 | 435.58 | 100 | 4% | 0% |
 
 ### Input validation
 
@@ -273,10 +243,8 @@ fastdrf: serializer `SmallInputSerializer`; input recognized.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 2,802 | ±1.6% | 20.03 | 72.27 | 98 | 1% | 1% |
-| fastdrf | 1 | 4,137 | ±1.0% | 13.75 | 55.13 | 97 | 1% | 1% |
-| drf | 4 | 9,340 | ±0.3% | 4.41 | 42.71 | 395 | 1% | 2% |
-| fastdrf | 4 | 13,002 | ±1.6% | 2.82 | 29.75 | 394 | 1% | 3% |
+| drf | 1 | 2,804 | ±3.1% | 20.10 | 72.77 | 99 | 1% | 1% |
+| fastdrf | 1 | 4,125 | ±0.2% | 13.77 | 54.43 | 99 | 1% | 1% |
 
 #### validate-wide
 
@@ -288,10 +256,8 @@ fastdrf: serializer `WideInputSerializer`; input recognized.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 1,214 | ±0.4% | 46.04 | 121.51 | 99 | 1% | 0% |
-| fastdrf | 1 | 3,469 | ±2.8% | 16.44 | 62.19 | 98 | 1% | 1% |
-| drf | 4 | 4,140 | ±2.1% | 7.96 | 71.29 | 394 | 1% | 1% |
-| fastdrf | 4 | 11,185 | ±4.4% | 4.31 | 33.86 | 393 | 1% | 3% |
+| drf | 1 | 1,248 | ±2.6% | 44.62 | 117.86 | 99 | 1% | 0% |
+| fastdrf | 1 | 3,468 | ±0.4% | 16.55 | 50.53 | 98 | 1% | 1% |
 
 #### validate-nested
 
@@ -303,10 +269,8 @@ fastdrf: serializer `BatchSerializer`; input recognized.
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 304 | ±0.3% | 203.06 | 300.25 | 99 | 1% | 0% |
-| fastdrf | 1 | 1,274 | ±2.1% | 44.99 | 115.44 | 99 | 1% | 0% |
-| drf | 4 | 983 | ±0.2% | 59.94 | 173.70 | 394 | 1% | 1% |
-| fastdrf | 4 | 4,158 | ±2.3% | 9.09 | 75.57 | 393 | 1% | 1% |
+| drf | 1 | 294 | ±5.0% | 212.19 | 314.25 | 99 | 1% | 0% |
+| fastdrf | 1 | 1,516 | ±3.0% | 37.87 | 103.21 | 99 | 1% | 1% |
 
 #### invalid
 
@@ -318,10 +282,8 @@ fastdrf: serializer `WideInputSerializer`; input DRF: the recognizer does not ac
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 966 | ±0.1% | 59.64 | 124.78 | 99 | 1% | 0% |
-| fastdrf | 1 | 1,114 | ±0.4% | 50.64 | 125.50 | 98 | 1% | 0% |
-| drf | 4 | 3,396 | ±0.2% | 11.45 | 94.78 | 395 | 1% | 1% |
-| fastdrf | 4 | 3,558 | ±4.0% | 12.12 | 78.75 | 392 | 1% | 1% |
+| drf | 1 | 969 | ±4.5% | 57.28 | 141.92 | 99 | 1% | 0% |
+| fastdrf | 1 | 1,067 | ±5.6% | 53.21 | 129.66 | 99 | 1% | 0% |
 
 ### Writes to PostgreSQL
 
@@ -335,10 +297,8 @@ fastdrf: serializer `ArticleSerializer`; output compiled; input DRF: ArticleSeri
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 382 | ±0.4% | 165.31 | 194.30 | 96 | 9% | 0% |
-| fastdrf | 1 | 397 | ±1.6% | 158.60 | 190.22 | 99 | 9% | 0% |
-| drf | 4 | 1,202 | ±1.0% | 41.94 | 116.02 | 356 | 32% | 0% |
-| fastdrf | 4 | 1,274 | ±0.6% | 41.70 | 109.44 | 365 | 35% | 1% |
+| drf | 1 | 363 | ±4.5% | 174.56 | 203.57 | 97 | 9% | 0% |
+| fastdrf | 1 | 382 | ±6.6% | 166.68 | 199.47 | 98 | 9% | 0% |
 
 #### db-update
 
@@ -350,18 +310,16 @@ fastdrf: serializer `ArticleSerializer`; output compiled; input DRF: ArticleSeri
 
 | Profile | Workers | req/s | Spread | p50 ms | p99 ms | CPU % | PostgreSQL | oha |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| drf | 1 | 443 | ±1.5% | 141.78 | 182.73 | 98 | 7% | 0% |
-| fastdrf | 1 | 491 | ±3.3% | 129.10 | 151.24 | 97 | 7% | 0% |
-| drf | 4 | 1,466 | ±2.7% | 23.79 | 121.45 | 348 | 24% | 1% |
-| fastdrf | 4 | 1,572 | ±0.5% | 24.23 | 112.63 | 329 | 25% | 1% |
+| drf | 1 | 449 | ±1.6% | 139.47 | 177.02 | 97 | 7% | 0% |
+| fastdrf | 1 | 487 | ±3.6% | 130.36 | 149.25 | 96 | 7% | 0% |
 
 ## Parameters
 
-- Profiles: drf, fastdrf; workers: [1, 4]; Gunicorn gthread with 8 threads per worker
-- Server CPUs: [0, 2, 4, 6] (one per worker); load generator CPUs: [8, 9, 10, 11, 12, 13, 14, 15]
+- Profiles: drf, fastdrf; workers: [1]; Gunicorn gthread with 8 threads per worker
+- Server CPUs: [0] (one per worker); load generator CPUs: [8, 9, 10, 11, 12, 13, 14, 15]
 - Repeats: 2; duration: 10 s per read sample; warmup: 2 s; requests per write sample: 2000
 - Concurrency: 64; order seed: 42
-- Started: 2026-10-01T14:54:32.512990+00:00; finished: 2026-10-01T15:27:38.666309+00:00
+- Started: 2026-10-03T19:04:07.091873+00:00; finished: 2026-10-03T19:20:59.020687+00:00
 - Load generator: oha 1.16.0
 
 ## Environment
@@ -369,20 +327,15 @@ fastdrf: serializer `ArticleSerializer`; output compiled; input DRF: ArticleSeri
 - Python: 3.14.7 (main, Sep  1 2026, 14:18:09) [Clang 22.1.3 ]; GIL enabled: True
 - Host: Intel(R) Core(TM) i7-14700F, 28 logical CPUs, 123.3 GiB; CPU frequency governor: powersave
 - Platform: Linux-7.0.0-31-generic-x86_64-with-glibc2.43
-- Packages: Django 6.1.1, djangorestframework 3.18.1, django-fastdrf 0.1.0, msgspec 0.22.0, pydantic 2.13.5, gunicorn 26.2.0, psycopg 3.3.6
-- django-fastdrf 0.1.0: source `a9190ed88132`, installed from the package index
-- Benchmark source: `18a91f463434` (commit none, working tree unknown)
+- Packages: Django 6.1.1, djangorestframework 3.18.1, django-fastdrf 0.5.0, msgspec 0.22.0, pydantic 2.13.5, gunicorn 26.2.0, psycopg 3.3.6
+- django-fastdrf 0.5.0: source `63f32eee6b29`, installed from the package index
+- Benchmark source: `0052fc4b2004` (commit 782ed4532d694b3c591a7894bd3836b3e41c9466, working tree modified)
 - PostgreSQL: effective_cache_size 3GB, fsync on, max_connections 200, random_page_cost 1.1, server_version 18.6 (Debian 18.6-1.pgdg12+2), shared_buffers 512MB, synchronous_commit off, work_mem 8MB
 
 Server commands:
 
-- w1: `.venv/bin/python -m gunicorn bench.wsgi:application --bind 127.0.0.1:8180 --workers 1 --worker-class gthread --threads 8 --keep-alive 5 --backlog 2048 --timeout 60 --graceful-timeout 10 --log-level warning --error-logfile - --config python:bench.gunicorn_config`
-- w4: `.venv/bin/python -m gunicorn bench.wsgi:application --bind 127.0.0.1:8180 --workers 4 --worker-class gthread --threads 8 --keep-alive 5 --backlog 2048 --timeout 60 --graceful-timeout 10 --log-level warning --error-logfile - --config python:bench.gunicorn_config`
+- w1: `/home/ctolon/aiodrf/forks/fastdrf-benchmarks/.venv/bin/python -m gunicorn bench.wsgi:application --bind 127.0.0.1:8180 --workers 1 --worker-class gthread --threads 8 --keep-alive 5 --backlog 2048 --timeout 60 --graceful-timeout 10 --log-level warning --error-logfile - --config python:bench.gunicorn_config`
 
 ## Files
 
-`report/summary.csv` holds every group's numbers, `report/samples.json` every
-sample and `report/manifest.json` the environment, the settings of both
-profiles and what fastdrf does per case. The charts are in `report/graphs/`.
-The raw output of each sample (load generator output, server log, resource
-samples) stays in the run directory, which is not part of the repository.
+`summary.csv` holds every group's numbers; `samples.json` every sample; each case directory the load generator's output and command, the server log and the resource samples; `manifest.json` the environment, the settings of both profiles and what fastdrf does per case.

@@ -29,7 +29,7 @@ SQL is the number of queries per request, the same in both profiles.
 | `deep` | output | `GET /out/deep/` | 200 | — | 8,390 | 0 | output compiled |
 | `types` | output | `GET /out/types/` | 200 | — | 28,302 | 0 | output compiled |
 | `text-heavy` | output | `GET /out/text-heavy/` | 200 | — | 77,712 | 0 | output compiled |
-| `method-field` | output | `GET /out/method-field/` | 200 | — | 25,877 | 0 | output on DRF |
+| `method-field` | output | `GET /out/method-field/` | 200 | — | 25,877 | 0 | compiled output; `label` delegated |
 | `plain-serializer` | output | `GET /out/plain-serializer/` | 200 | — | 19,285 | 0 | output on DRF |
 | `db-list` | database | `GET /db/articles/` | 200 | — | 12,928 | 3 | output compiled |
 | `db-detail` | database | `GET /db/articles/1/` | 200 | — | 632 | 2 | output compiled |
@@ -100,11 +100,11 @@ separators U+2028 and U+2029, which DRF's renderer escapes.
 
 ### `method-field`
 
-The `list-100` items with a `SerializerMethodField`. fastdrf cannot know
-what the method returns, so it leaves the whole serializer to DRF; the
-`fastdrf` profile still has the field cache, its renderer and its dispatch
-mixins. This case shows what remains of the difference without compiled
-output.
+The `list-100` items with a `SerializerMethodField`. The current fastdrf
+profile compiles the model fields and delegates `label` to the original
+method. `BENCH_DELEGATE_FIELDS=0` leaves the whole serializer to DRF, retaining
+field caching, rendering and dispatch optimizations. The manifest and report
+record delegated fields so these two paths are distinguishable.
 
 ### `plain-serializer`
 
@@ -199,3 +199,13 @@ serializers output decimals as strings, and the floats of the payloads have
 at most three decimals and lie below 100,000, which both encoders write the
 same way. Every case's bytes are compared with DRF's, so a value outside these
 limits would fail the tests rather than the comparison.
+
+## Alternative JSON transports
+
+`BENCH_JSON=pydantic` selects fastdrf's pydantic-core parser/renderer;
+`orjson` selects its orjson pair; `drf` selects DRF's default JSON classes.
+The default remains msgspec. Payloads, expected bytes and SQL limits do not
+change with the selection. All 20 cases pass for msgspec, pydantic and DRF.
+With fastdrf 0.5.0, orjson passes 19 cases but rejects the integer index keys
+in `invalid`'s `ListField` error details (`TypeError: Dict key must be str`).
+The runner must reject this response; it is not a valid speed-up sample.

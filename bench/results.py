@@ -322,6 +322,8 @@ def _path_summary(path: dict | None) -> str:
                 if path[key] in ("compiled", "recognized")
                 else f"{key} DRF"
             )
+    if path.get("delegated"):
+        parts.append("delegated: " + ", ".join(path["delegated"]))
     return ", ".join(parts)
 
 
@@ -390,6 +392,11 @@ def _case_section(
             f"fastdrf: serializer `{path.get('serializer')}`"
             + "".join(
                 f"; {key} {path[key]}" for key in ("output", "input") if key in path
+            )
+            + (
+                "; delegated fields: " + ", ".join(path["delegated"])
+                if path.get("delegated")
+                else ""
             )
             + ".",
             "",
